@@ -2,7 +2,35 @@
 
 ### 解法一 : 递归
 
-```
+```java
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) { val = x; }
+ * }
+ */
+class Solution {
+    public List<List<Integer>> levelOrder(TreeNode root) {
+      List<List<Integer>> l=new ArrayList<List<Integer>>();
+      foo(root,l,0);
+      return l;
+    }
+    public void foo(TreeNode root,List<List<Integer>> l,int level){
+      if(root==null)
+        return;
+      if(l.size()==level){
+        ArrayList<Integer> xList = new ArrayList<Integer>();
+        l.add(xList);
+      }
+      l.get(level).add(root.val);
+      foo(root.left,l,level+1);
+      foo(root.right,l,level+1);
+
+    }
+}
 
 ```
 
