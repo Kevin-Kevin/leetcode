@@ -2,6 +2,7 @@
 
 - leetcode题库
   * [450. 删除二叉搜索树中的节点](leetcode题库/450. 删除二叉搜索树中的节点.md)
+  * [Nihao](leetcode题库/nihao.md)
   * [nihao你好](leetcode题库/nihao你好.md)
 - 剑指 offer
   * [剑指 Offer 30. 包含min函数的栈](剑指 offer/剑指 Offer 30. 包含min函数的栈.md)
