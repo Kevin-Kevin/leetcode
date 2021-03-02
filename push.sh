@@ -1,6 +1,12 @@
 echo 'make dictionary ...'
 book sm 
 
+echo 'gitbook build ...'
+cd ../
+gitbook leetcode leetcode/docs
+
+cd leetcode
+
 echo 'git add all ...'
 git add --all
 
