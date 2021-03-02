@@ -1,5 +1,5 @@
 echo 'make dictionary ...'
-book sm 
+book sm -t 'leetcode 刷题笔记'
 
 echo 'gitbook build ...'
 cd ../
