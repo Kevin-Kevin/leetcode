@@ -1,5 +1,5 @@
 echo 'make dictionary ...'
-book sm
+book sm -i index
 
 echo 'copy summary.md to index.md ...'
 cp SUMMARY.md index.md
