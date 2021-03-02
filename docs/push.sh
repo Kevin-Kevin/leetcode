@@ -1,11 +1,12 @@
 echo 'make dictionary ...'
 book sm -t 'leetcode 刷题笔记'
 
-path = $(basename)
+pwd=`pwd`
+path=`basename $pwd`
 
 echo 'gitbook build ...'
 cd ../
-gitbook build leetcode leetcode/docs
+gitbook build $path $path/docs
 
 cd leetcode
 
