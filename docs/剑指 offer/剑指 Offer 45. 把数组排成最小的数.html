@@ -1,0 +1,428 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>剑指 Offer 45. 把数组排成最小的数 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="剑指 Offer 59 - II. 队列的最大值.html" />
+    
+    
+    <link rel="prev" href="剑指 Offer 32 - II. 从上到下打印二叉树 II.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    leetcode题库
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../leetcode题库/450. 删除二叉搜索树中的节点.html">
+            
+                <a href="../leetcode题库/450. 删除二叉搜索树中的节点.html">
+            
+                    
+                    450. 删除二叉搜索树中的节点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../leetcode题库/nihao.html">
+            
+                <a href="../leetcode题库/nihao.html">
+            
+                    
+                    Nihao
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../leetcode题库/nihao你好.html">
+            
+                <a href="../leetcode题库/nihao你好.html">
+            
+                    
+                    nihao你好
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    剑指 offer
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="剑指 Offer 30. 包含min函数的栈.html">
+            
+                <a href="剑指 Offer 30. 包含min函数的栈.html">
+            
+                    
+                    剑指 Offer 30. 包含min函数的栈
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="剑指 Offer 32 - II. 从上到下打印二叉树 II.html">
+            
+                <a href="剑指 Offer 32 - II. 从上到下打印二叉树 II.html">
+            
+                    
+                    剑指 Offer 32 - II. 从上到下打印二叉树 II
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.3" data-path="剑指 Offer 45. 把数组排成最小的数.html">
+            
+                <a href="剑指 Offer 45. 把数组排成最小的数.html">
+            
+                    
+                    剑指 Offer 45. 把数组排成最小的数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="剑指 Offer 59 - II. 队列的最大值.html">
+            
+                <a href="剑指 Offer 59 - II. 队列的最大值.html">
+            
+                    
+                    剑指 Offer 59 - II. 队列的最大值
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Index
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >剑指 Offer 45. 把数组排成最小的数</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="&#x5251;&#x6307;-offer-45-&#x628A;&#x6570;&#x7EC4;&#x6392;&#x6210;&#x6700;&#x5C0F;&#x7684;&#x6570;"><a href="https://leetcode-cn.com/problems/ba-shu-zu-pai-cheng-zui-xiao-de-shu-lcof/" target="_blank">&#x5251;&#x6307; Offer 45. &#x628A;&#x6570;&#x7EC4;&#x6392;&#x6210;&#x6700;&#x5C0F;&#x7684;&#x6570;</a></h2>
+<blockquote>
+<p>&#x8F93;&#x5165;&#x4E00;&#x4E2A;&#x975E;&#x8D1F;&#x6574;&#x6570;&#x6570;&#x7EC4;&#xFF0C;&#x628A;&#x6570;&#x7EC4;&#x91CC;&#x6240;&#x6709;&#x6570;&#x5B57;&#x62FC;&#x63A5;&#x8D77;&#x6765;&#x6392;&#x6210;&#x4E00;&#x4E2A;&#x6570;&#xFF0C;&#x6253;&#x5370;&#x80FD;&#x62FC;&#x63A5;&#x51FA;&#x7684;&#x6240;&#x6709;&#x6570;&#x5B57;&#x4E2D;&#x6700;&#x5C0F;&#x7684;&#x4E00;&#x4E2A;&#x3002;</p>
+<p>&#x793A;&#x4F8B; 1:</p>
+<p>&#x8F93;&#x5165;: [10,2]
+&#x8F93;&#x51FA;: &quot;102&quot;
+&#x793A;&#x4F8B; 2:</p>
+<p>&#x8F93;&#x5165;: [3,30,34,5,9]
+&#x8F93;&#x51FA;: &quot;3033459&quot;</p>
+</blockquote>
+<h3 id="&#x65B9;&#x6CD5;&#x4E00;--&#x63D2;&#x5165;&#x6392;&#x5E8F;-&#x8981;&#x4F7F;&#x7528;&#x7279;&#x6B8A;&#x7684;&#x6BD4;&#x8F83;&#x65B9;&#x5F0F;">&#x65B9;&#x6CD5;&#x4E00; : &#x63D2;&#x5165;&#x6392;&#x5E8F; (&#x8981;&#x4F7F;&#x7528;&#x7279;&#x6B8A;&#x7684;&#x6BD4;&#x8F83;&#x65B9;&#x5F0F;)</h3>
+<pre><code class="lang-c++"><span class="hljs-keyword">class</span> Solution {
+<span class="hljs-keyword">public</span>:
+    <span class="hljs-function"><span class="hljs-built_in">string</span> <span class="hljs-title">minNumber</span><span class="hljs-params">(<span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">int</span>&gt;&amp; nums)</span> </span>{
+      <span class="hljs-comment">// &#x63D2;&#x5165;&#x6392;&#x5E8F;</span>
+      <span class="hljs-comment">// &#x6BD4;&#x8F83;&#x65F6;&#x8981;&#x7528;&#x7279;&#x6B8A;&#x7684;&#x6BD4;&#x8F83;&#x65B9;&#x5F0F;</span>
+      <span class="hljs-keyword">int</span> length=nums.size();
+      <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i=<span class="hljs-number">1</span>;i&lt;length;i++){
+        <span class="hljs-keyword">int</span> index=i;
+        <span class="hljs-keyword">int</span> num=nums.at(i);
+        <span class="hljs-comment">// &#x5C0F;&#x4E8E;&#x524D;&#x9762;&#x7684;&#x6570;&#x5C31;&#x628A;&#x524D;&#x9762;&#x7684;&#x6570;&#x5411;&#x540E;&#x632A;</span>
+        <span class="hljs-keyword">while</span>( <span class="hljs-number">1</span>==specialCompare(num, nums.at(index<span class="hljs-number">-1</span>)) ){
+          nums.at(index) = nums.at(index<span class="hljs-number">-1</span>);
+          index--;
+          <span class="hljs-keyword">if</span>(index==<span class="hljs-number">0</span>)
+            <span class="hljs-keyword">break</span>;
+        }
+        <span class="hljs-comment">// &#x632A;&#x5B8C;&#x540E;&#x5C06;&#x6570;&#x5B57;&#x653E;&#x8FDB;&#x53BB;</span>
+        nums.at(index) = num; 
+      }
+      <span class="hljs-comment">// &#x5C06;&#x6570;&#x7EC4;&#x8F6C;&#x6362;&#x4E3A;&#x5B57;&#x7B26;&#x4E32;</span>
+      <span class="hljs-built_in">string</span> str=to_string(nums.at(<span class="hljs-number">0</span>));
+      <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i=<span class="hljs-number">1</span>;i&lt;length;i++){
+        <span class="hljs-built_in">string</span> n=to_string(nums.at(i));
+        str.append(n);
+      }
+      <span class="hljs-keyword">return</span> str;
+    }
+    <span class="hljs-comment">// &#x6BD4;&#x8F83;&#x4E24;&#x4E2A;&#x6570;&#x5B57;&#x8C01;&#x653E;&#x524D;&#x9762;&#x6BD4;&#x8F83;&#x5C0F;</span>
+      <span class="hljs-comment">// &#x8F6C;&#x6362;&#x6210;&#x5B57;&#x7B26;&#x4E32;&#x540E;&#x4E92;&#x76F8;&#x8FFD;&#x52A0;&#x5230;&#x540E;&#x9762;,&#x7136;&#x540E;&#x4ECE;&#x4E0B;&#x6807; 0 &#x5F00;&#x59CB;&#x6BD4;&#x8F83;</span>
+    <span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">specialCompare</span><span class="hljs-params">(<span class="hljs-keyword">int</span> a,<span class="hljs-keyword">int</span> b)</span></span>{
+      <span class="hljs-built_in">string</span> aStr = to_string(a);
+      <span class="hljs-built_in">string</span> bStr = to_string(b);
+      aStr.append(to_string(b));
+      bStr.append(to_string(a));
+      <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i=<span class="hljs-number">0</span>;i&lt;aStr.size();i++){
+        <span class="hljs-keyword">if</span>(aStr.at(i)&lt;bStr.at(i))
+          <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;
+        <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(aStr.at(i)&gt;bStr.at(i))
+          <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+      }
+      <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+    }
+
+};
+</code></pre>
+<h3 id="&#x65B9;&#x6CD5;&#x4E8C;-&#x5F52;&#x5E76;&#x6392;&#x5E8F;">&#x65B9;&#x6CD5;&#x4E8C; &#x5F52;&#x5E76;&#x6392;&#x5E8F;</h3>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="剑指 Offer 32 - II. 从上到下打印二叉树 II.html" class="navigation navigation-prev " aria-label="Previous page: 剑指 Offer 32 - II. 从上到下打印二叉树 II">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="剑指 Offer 59 - II. 队列的最大值.html" class="navigation navigation-next " aria-label="Next page: 剑指 Offer 59 - II. 队列的最大值">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"剑指 Offer 45. 把数组排成最小的数","level":"1.3.3","depth":2,"next":{"title":"剑指 Offer 59 - II. 队列的最大值","level":"1.3.4","depth":2,"path":"剑指 offer/剑指 Offer 59 - II. 队列的最大值.md","ref":"剑指 offer/剑指 Offer 59 - II. 队列的最大值.md","articles":[]},"previous":{"title":"剑指 Offer 32 - II. 从上到下打印二叉树 II","level":"1.3.2","depth":2,"path":"剑指 offer/剑指 Offer 32 - II. 从上到下打印二叉树 II.md","ref":"剑指 offer/剑指 Offer 32 - II. 从上到下打印二叉树 II.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"剑指 offer/剑指 Offer 45. 把数组排成最小的数.md","mtime":"2021-03-02T13:42:32.395Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-03-02T15:18:59.797Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
