@@ -5,7 +5,7 @@ path = $(basename)
 
 echo 'gitbook build ...'
 cd ../
-gitbook build 'path' 'path'/docs
+gitbook build leetcode leetcode/docs
 
 cd leetcode
 
