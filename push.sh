@@ -3,7 +3,7 @@ book sm
 
 echo 'gitbook build ...'
 cd ../
-gitbook leetcode leetcode/docs
+gitbook build leetcode leetcode/docs
 
 cd leetcode
 

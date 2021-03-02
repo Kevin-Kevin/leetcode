@@ -1,8 +1,11 @@
 echo 'make dictionary ...'
-book sm -i index -t 'leetcode 刷题笔记' -o './index.md'
+book sm 
 
-echo 'copy summary.md to index.md ...'
-cp SUMMARY.md index.md
+echo 'gitbook build ...'
+cd ../
+gitbook build leetcode leetcode/docs
+
+cd leetcode
 
 echo 'git add all ...'
 git add --all
