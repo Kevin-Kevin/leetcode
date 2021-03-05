@@ -13,8 +13,31 @@ cd leetcode
 echo 'git add all ...'
 git add --all
 
+res=`echo $?`
+if [ "$res" != "0" ]
+then 
+    exit 1
+    echo '---->> error : git add failed'
+fi
+
 echo 'git commit ...'
-git commit -a -m "add md file"
+gitCommit='git commit -a -m "add md file"'
+
+res=`echo $?`
+if [ "$res" != "0" ]
+then
+    exit 1
+    echo '---->> error : git add failed'
+
+fi
 
 echo 'git push ...'
 git push
+
+res=`echo $?`
+if [ "$res" != "0" ]
+then
+    exit 1
+     echo '---->> error : git add failed'
+
+fi
