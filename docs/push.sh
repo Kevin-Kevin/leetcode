@@ -27,7 +27,7 @@ res=`echo $?`
 if [ "$res" != "0" ]
 then
     exit 1
-    echo '---->> error : git add failed'
+    echo '---->> error : git commit failed'
 
 fi
 
@@ -38,6 +38,6 @@ res=`echo $?`
 if [ "$res" != "0" ]
 then
     exit 1
-     echo '---->> error : git add failed'
+     echo '---->> error : git push failed'
 
 fi
