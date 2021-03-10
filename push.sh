@@ -21,7 +21,7 @@ then
 fi
 
 echo 'git commit ...'
-gitCommit='git commit -a -m "add md file"'
+git commit -a -m "add md file"
 
 res=`echo $?`
 if [ "$res" != "0" ]
