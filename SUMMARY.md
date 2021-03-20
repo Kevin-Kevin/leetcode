@@ -4,7 +4,7 @@
   * [450. 删除二叉搜索树中的节点](leetcode题库/450. 删除二叉搜索树中的节点.md)
 - 剑指 offer
   * [⏰ 剑指 Offer 39. 数组中出现次数超过一半的数字](剑指 offer/⏰ 剑指 Offer 39. 数组中出现次数超过一半的数字.md)
-  * [⏰ 剑指 Offer 57. 和为s的两个数字](剑指 offer/⏰ 剑指 Offer 57. 和为s的两个数字.md)
+  * [⏰ 剑指 Offer 57 - II. 和为s的连续正数序列](剑指 offer/⏰ 剑指 Offer 57 - II. 和为s的连续正数序列.md)
   * [剑指 Offer 30. 包含min函数的栈](剑指 offer/剑指 Offer 30. 包含min函数的栈.md)
   * [剑指 Offer 32 - II. 从上到下打印二叉树 II](剑指 offer/剑指 Offer 32 - II. 从上到下打印二叉树 II.md)
   * [剑指 Offer 32 - III. 从上到下打印二叉树 III](剑指 offer/剑指 Offer 32 - III. 从上到下打印二叉树 III.md)
@@ -17,6 +17,8 @@
   * [剑指 Offer 54. 二叉搜索树的第k大节点](剑指 offer/剑指 Offer 54. 二叉搜索树的第k大节点.md)
   * [剑指 Offer 55 - I. 二叉树的深度](剑指 offer/剑指 Offer 55 - I. 二叉树的深度.md)
   * [剑指 Offer 55 - II. 平衡二叉树](剑指 offer/剑指 Offer 55 - II. 平衡二叉树.md)
+  * [剑指 Offer 57. 和为s的两个数字](剑指 offer/剑指 Offer 57. 和为s的两个数字.md)
   * [剑指 Offer 59 - II. 队列的最大值](剑指 offer/剑指 Offer 59 - II. 队列的最大值.md)
   * [剑指 Offer 68 - I. 二叉搜索树的最近公共祖先](剑指 offer/剑指 Offer 68 - I. 二叉搜索树的最近公共祖先.md)
   * [剑指 Offer 68 - II. 二叉树的最近公共祖先](剑指 offer/剑指 Offer 68 - II. 二叉树的最近公共祖先.md)
+- [解题套路](解题套路/解题套路.md)

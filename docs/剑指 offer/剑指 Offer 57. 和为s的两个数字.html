@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>⏰ 剑指 Offer 57. 和为s的两个数字 · GitBook</title>
+        <title>剑指 Offer 57. 和为s的两个数字 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="剑指 Offer 30. 包含min函数的栈.html" />
+    <link rel="next" href="剑指 Offer 59 - II. 队列的最大值.html" />
     
     
-    <link rel="prev" href="⏰ 剑指 Offer 39. 数组中出现次数超过一半的数字.html" />
+    <link rel="prev" href="剑指 Offer 55 - II. 平衡二叉树.html" />
     
 
     </head>
@@ -161,12 +161,12 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.3.2" data-path="⏰ 剑指 Offer 57. 和为s的两个数字.html">
+        <li class="chapter " data-level="1.3.2" data-path="⏰ 剑指 Offer 57 - II. 和为s的连续正数序列.html">
             
-                <a href="⏰ 剑指 Offer 57. 和为s的两个数字.html">
+                <a href="⏰ 剑指 Offer 57 - II. 和为s的连续正数序列.html">
             
                     
-                    ⏰ 剑指 Offer 57. 和为s的两个数字
+                    ⏰ 剑指 Offer 57 - II. 和为s的连续正数序列
             
                 </a>
             
@@ -330,7 +330,20 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.15" data-path="剑指 Offer 59 - II. 队列的最大值.html">
+        <li class="chapter active" data-level="1.3.15" data-path="剑指 Offer 57. 和为s的两个数字.html">
+            
+                <a href="剑指 Offer 57. 和为s的两个数字.html">
+            
+                    
+                    剑指 Offer 57. 和为s的两个数字
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.16" data-path="剑指 Offer 59 - II. 队列的最大值.html">
             
                 <a href="剑指 Offer 59 - II. 队列的最大值.html">
             
@@ -343,7 +356,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.16" data-path="剑指 Offer 68 - I. 二叉搜索树的最近公共祖先.html">
+        <li class="chapter " data-level="1.3.17" data-path="剑指 Offer 68 - I. 二叉搜索树的最近公共祖先.html">
             
                 <a href="剑指 Offer 68 - I. 二叉搜索树的最近公共祖先.html">
             
@@ -356,7 +369,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.17" data-path="剑指 Offer 68 - II. 二叉树的最近公共祖先.html">
+        <li class="chapter " data-level="1.3.18" data-path="剑指 Offer 68 - II. 二叉树的最近公共祖先.html">
             
                 <a href="剑指 Offer 68 - II. 二叉树的最近公共祖先.html">
             
@@ -371,6 +384,19 @@
     
 
             </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../解题套路/解题套路.html">
+            
+                <a href="../解题套路/解题套路.html">
+            
+                    
+                    解题套路
+            
+                </a>
+            
+
             
         </li>
     
@@ -404,7 +430,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >⏰ 剑指 Offer 57. 和为s的两个数字</a>
+        <a href=".." >剑指 Offer 57. 和为s的两个数字</a>
     </h1>
 </div>
 
@@ -457,6 +483,59 @@
     }
 }
 </code></pre>
+<h4 id="&#x89E3;&#x6CD5;&#x4E8C;-&#x54C8;&#x5E0C;&#x8868;">&#x89E3;&#x6CD5;&#x4E8C; &#x54C8;&#x5E0C;&#x8868;</h4>
+<p>&#x904D;&#x5386;&#x4E00;&#x904D;&#x54C8;&#x5E0C;&#x8868;&#x5199;&#x5165;&#x6240;&#x6709;&#x7684;&#x6570;</p>
+<p>&#x7B2C;&#x4E8C;&#x6B21;&#x904D;&#x5386;, &#x5728;&#x54C8;&#x5E0C;&#x8868;&#x4E2D;&#x5BFB;&#x627E; target -nums[i]</p>
+<pre><code class="lang-java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Solution</span> </span>{
+  <span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span>[] twoSum(<span class="hljs-keyword">int</span>[] nums, <span class="hljs-keyword">int</span> target) {
+    <span class="hljs-keyword">int</span>[] res = <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[<span class="hljs-number">2</span>];
+    HashMap&lt;Integer, Integer&gt; map = <span class="hljs-keyword">new</span> HashMap&lt;&gt;();
+    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i =<span class="hljs-number">0</span>;i&lt;nums.length;i++){
+      map.put(nums[i],i);
+    }
+    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i =<span class="hljs-number">0</span>;i&lt;nums.length;i++){
+      <span class="hljs-keyword">if</span>(map.containsKey(target-nums[i])){
+        res[<span class="hljs-number">0</span>] = nums[i];
+        res[<span class="hljs-number">1</span>] = target-nums[i];
+        <span class="hljs-keyword">return</span> res;
+      }
+    }
+    <span class="hljs-keyword">return</span> res;
+  }
+}
+</code></pre>
+<h4 id="&#x89E3;&#x6CD5;&#x4E09;-&#x53CC;&#x6307;&#x9488;">&#x89E3;&#x6CD5;&#x4E09; &#x53CC;&#x6307;&#x9488;</h4>
+<p>&#x4F7F;&#x7528;&#x53CC;&#x6307;&#x9488;&#x4E5F;&#x53EF;&#x4EE5;&#x5206;&#x4E3A;&#x4E24;&#x79CD;</p>
+<ol>
+<li><p>&#x4E00;&#x79CD;&#x662F;&#x7528;&#x4E8C;&#x5206;&#x6CD5;, &#x904D;&#x5386;&#x6570;&#x7EC4;,&#x4F7F;&#x7528;&#x4E8C;&#x5206;&#x6CD5;&#x67E5;&#x627E; target-nums[i], &#x65F6;&#x95F4;&#x590D;&#x6742;&#x5EA6;&#x4E3A; O( nlog(n) )</p>
+</li>
+<li><p>&#x53E6;&#x4E00;&#x79CD;&#x662F;&#x4E00;&#x4E2A;&#x6307;&#x9488; front &#x6307;&#x5411;&#x5F00;&#x5934;, &#x4E00;&#x4E2A;&#x6307;&#x9488; end &#x6307;&#x5411;&#x7ED3;&#x5C3E; ,  T=O(n) </p>
+<p>&#x5982;&#x679C; nums[front] + nums[end] &lt; target, &#x56E0;&#x4E3A; nums[end] &#x662F;&#x6700;&#x5927;&#x7684;&#x6570;, &#x6240;&#x4EE5;&#x53EA;&#x80FD; front++</p>
+<p>&#x5982;&#x679C; &#x76F8;&#x52A0;&#x5927;&#x4E8E; target, &#x56E0;&#x4E3A; nums[front] &#x662F;&#x6700;&#x5C0F;&#x7684;, &#x53EA;&#x80FD; end--</p>
+<p>&#x5982;&#x679C;&#x76F8;&#x52A0;&#x548C; target &#x76F8;&#x7B49;, &#x76F4;&#x63A5;&#x8FD4;&#x56DE;</p>
+</li>
+</ol>
+<pre><code class="lang-java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Solution</span> </span>{
+  <span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span>[] twoSum(<span class="hljs-keyword">int</span>[] nums, <span class="hljs-keyword">int</span> target) {
+    <span class="hljs-keyword">int</span> front = <span class="hljs-number">0</span>;
+    <span class="hljs-keyword">int</span> end = nums.length-<span class="hljs-number">1</span>;
+    <span class="hljs-keyword">int</span>[] res = <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[<span class="hljs-number">2</span>];
+    <span class="hljs-keyword">while</span>(front&lt;end){
+      <span class="hljs-keyword">if</span>(nums[front]+nums[end]&lt;target){
+        front++;
+      }<span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(nums[front]+nums[end]&gt;target){
+        end--;
+      }<span class="hljs-keyword">else</span>{
+        res[<span class="hljs-number">0</span>] = nums[front];
+        res[<span class="hljs-number">1</span>] = nums[end];
+        <span class="hljs-keyword">return</span> res;
+      }
+    }
+    <span class="hljs-comment">// &#x9898;&#x76EE;&#x6CA1;&#x6709;&#x8BF4;&#x6CA1;&#x627E;&#x5230;&#x8FD4;&#x56DE;&#x4EC0;&#x4E48;, &#x5C31;&#x76F4;&#x63A5;&#x8FD4;&#x56DE; res</span>
+    <span class="hljs-keyword">return</span> res;
+  }
+}
+</code></pre>
 
                                 
                                 </section>
@@ -484,12 +563,12 @@
 
             
                 
-                <a href="⏰ 剑指 Offer 39. 数组中出现次数超过一半的数字.html" class="navigation navigation-prev " aria-label="Previous page: ⏰ 剑指 Offer 39. 数组中出现次数超过一半的数字">
+                <a href="剑指 Offer 55 - II. 平衡二叉树.html" class="navigation navigation-prev " aria-label="Previous page: 剑指 Offer 55 - II. 平衡二叉树">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="剑指 Offer 30. 包含min函数的栈.html" class="navigation navigation-next " aria-label="Next page: 剑指 Offer 30. 包含min函数的栈">
+                <a href="剑指 Offer 59 - II. 队列的最大值.html" class="navigation navigation-next " aria-label="Next page: 剑指 Offer 59 - II. 队列的最大值">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -500,7 +579,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"⏰ 剑指 Offer 57. 和为s的两个数字","level":"1.3.2","depth":2,"next":{"title":"剑指 Offer 30. 包含min函数的栈","level":"1.3.3","depth":2,"path":"剑指 offer/剑指 Offer 30. 包含min函数的栈.md","ref":"剑指 offer/剑指 Offer 30. 包含min函数的栈.md","articles":[]},"previous":{"title":"⏰ 剑指 Offer 39. 数组中出现次数超过一半的数字","level":"1.3.1","depth":2,"path":"剑指 offer/⏰ 剑指 Offer 39. 数组中出现次数超过一半的数字.md","ref":"剑指 offer/⏰ 剑指 Offer 39. 数组中出现次数超过一半的数字.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"剑指 offer/⏰ 剑指 Offer 57. 和为s的两个数字.md","mtime":"2021-03-20T09:34:41.255Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-03-20T09:39:09.559Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"剑指 Offer 57. 和为s的两个数字","level":"1.3.15","depth":2,"next":{"title":"剑指 Offer 59 - II. 队列的最大值","level":"1.3.16","depth":2,"path":"剑指 offer/剑指 Offer 59 - II. 队列的最大值.md","ref":"剑指 offer/剑指 Offer 59 - II. 队列的最大值.md","articles":[]},"previous":{"title":"剑指 Offer 55 - II. 平衡二叉树","level":"1.3.14","depth":2,"path":"剑指 offer/剑指 Offer 55 - II. 平衡二叉树.md","ref":"剑指 offer/剑指 Offer 55 - II. 平衡二叉树.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"剑指 offer/剑指 Offer 57. 和为s的两个数字.md","mtime":"2021-03-20T13:12:18.053Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-03-20T14:12:50.845Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
