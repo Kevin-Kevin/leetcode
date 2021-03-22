@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>剑指 Offer 45. 把数组排成最小的数 · GitBook</title>
+        <title>⏰ 17. 电话号码的字母组合 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,8 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="剑指 Offer 50. 第一个只出现一次的字符.html" />
+    <link rel="next" href="⏰ 剑指 Offer 39. 数组中出现次数超过一半的数字.html" />
     
-    
-    <link rel="prev" href="剑指 Offer 35. 复杂链表的复制.html" />
     
 
     </head>
@@ -148,7 +146,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.3.1" data-path="⏰ 17. 电话号码的字母组合.html">
+        <li class="chapter active" data-level="1.3.1" data-path="⏰ 17. 电话号码的字母组合.html">
             
                 <a href="⏰ 17. 电话号码的字母组合.html">
             
@@ -239,7 +237,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.3.8" data-path="剑指 Offer 45. 把数组排成最小的数.html">
+        <li class="chapter " data-level="1.3.8" data-path="剑指 Offer 45. 把数组排成最小的数.html">
             
                 <a href="剑指 Offer 45. 把数组排成最小的数.html">
             
@@ -475,7 +473,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >剑指 Offer 45. 把数组排成最小的数</a>
+        <a href=".." >⏰ 17. 电话号码的字母组合</a>
     </h1>
 </div>
 
@@ -490,63 +488,27 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h2 id="&#x5251;&#x6307;-offer-45-&#x628A;&#x6570;&#x7EC4;&#x6392;&#x6210;&#x6700;&#x5C0F;&#x7684;&#x6570;"><a href="https://leetcode-cn.com/problems/ba-shu-zu-pai-cheng-zui-xiao-de-shu-lcof/" target="_blank">&#x5251;&#x6307; Offer 45. &#x628A;&#x6570;&#x7EC4;&#x6392;&#x6210;&#x6700;&#x5C0F;&#x7684;&#x6570;</a></h2>
-<blockquote>
-<p>&#x8F93;&#x5165;&#x4E00;&#x4E2A;&#x975E;&#x8D1F;&#x6574;&#x6570;&#x6570;&#x7EC4;&#xFF0C;&#x628A;&#x6570;&#x7EC4;&#x91CC;&#x6240;&#x6709;&#x6570;&#x5B57;&#x62FC;&#x63A5;&#x8D77;&#x6765;&#x6392;&#x6210;&#x4E00;&#x4E2A;&#x6570;&#xFF0C;&#x6253;&#x5370;&#x80FD;&#x62FC;&#x63A5;&#x51FA;&#x7684;&#x6240;&#x6709;&#x6570;&#x5B57;&#x4E2D;&#x6700;&#x5C0F;&#x7684;&#x4E00;&#x4E2A;&#x3002;</p>
-<p>&#x793A;&#x4F8B; 1:</p>
-<p>&#x8F93;&#x5165;: [10,2]
-&#x8F93;&#x51FA;: &quot;102&quot;
-&#x793A;&#x4F8B; 2:</p>
-<p>&#x8F93;&#x5165;: [3,30,34,5,9]
-&#x8F93;&#x51FA;: &quot;3033459&quot;</p>
-</blockquote>
-<h3 id="&#x65B9;&#x6CD5;&#x4E00;--&#x63D2;&#x5165;&#x6392;&#x5E8F;-&#x8981;&#x4F7F;&#x7528;&#x7279;&#x6B8A;&#x7684;&#x6BD4;&#x8F83;&#x65B9;&#x5F0F;">&#x65B9;&#x6CD5;&#x4E00; : &#x63D2;&#x5165;&#x6392;&#x5E8F; (&#x8981;&#x4F7F;&#x7528;&#x7279;&#x6B8A;&#x7684;&#x6BD4;&#x8F83;&#x65B9;&#x5F0F;)</h3>
-<pre><code class="lang-c++"><span class="hljs-keyword">class</span> Solution {
-<span class="hljs-keyword">public</span>:
-    <span class="hljs-function"><span class="hljs-built_in">string</span> <span class="hljs-title">minNumber</span><span class="hljs-params">(<span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">int</span>&gt;&amp; nums)</span> </span>{
-      <span class="hljs-comment">// &#x63D2;&#x5165;&#x6392;&#x5E8F;</span>
-      <span class="hljs-comment">// &#x6BD4;&#x8F83;&#x65F6;&#x8981;&#x7528;&#x7279;&#x6B8A;&#x7684;&#x6BD4;&#x8F83;&#x65B9;&#x5F0F;</span>
-      <span class="hljs-keyword">int</span> length=nums.size();
-      <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i=<span class="hljs-number">1</span>;i&lt;length;i++){
-        <span class="hljs-keyword">int</span> index=i;
-        <span class="hljs-keyword">int</span> num=nums.at(i);
-        <span class="hljs-comment">// &#x5C0F;&#x4E8E;&#x524D;&#x9762;&#x7684;&#x6570;&#x5C31;&#x628A;&#x524D;&#x9762;&#x7684;&#x6570;&#x5411;&#x540E;&#x632A;</span>
-        <span class="hljs-keyword">while</span>( <span class="hljs-number">1</span>==specialCompare(num, nums.at(index<span class="hljs-number">-1</span>)) ){
-          nums.at(index) = nums.at(index<span class="hljs-number">-1</span>);
-          index--;
-          <span class="hljs-keyword">if</span>(index==<span class="hljs-number">0</span>)
-            <span class="hljs-keyword">break</span>;
-        }
-        <span class="hljs-comment">// &#x632A;&#x5B8C;&#x540E;&#x5C06;&#x6570;&#x5B57;&#x653E;&#x8FDB;&#x53BB;</span>
-        nums.at(index) = num; 
-      }
-      <span class="hljs-comment">// &#x5C06;&#x6570;&#x7EC4;&#x8F6C;&#x6362;&#x4E3A;&#x5B57;&#x7B26;&#x4E32;</span>
-      <span class="hljs-built_in">string</span> str=to_string(nums.at(<span class="hljs-number">0</span>));
-      <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i=<span class="hljs-number">1</span>;i&lt;length;i++){
-        <span class="hljs-built_in">string</span> n=to_string(nums.at(i));
-        str.append(n);
-      }
-      <span class="hljs-keyword">return</span> str;
-    }
-    <span class="hljs-comment">// &#x6BD4;&#x8F83;&#x4E24;&#x4E2A;&#x6570;&#x5B57;&#x8C01;&#x653E;&#x524D;&#x9762;&#x6BD4;&#x8F83;&#x5C0F;</span>
-      <span class="hljs-comment">// &#x8F6C;&#x6362;&#x6210;&#x5B57;&#x7B26;&#x4E32;&#x540E;&#x4E92;&#x76F8;&#x8FFD;&#x52A0;&#x5230;&#x540E;&#x9762;,&#x7136;&#x540E;&#x4ECE;&#x4E0B;&#x6807; 0 &#x5F00;&#x59CB;&#x6BD4;&#x8F83;</span>
-    <span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">specialCompare</span><span class="hljs-params">(<span class="hljs-keyword">int</span> a,<span class="hljs-keyword">int</span> b)</span></span>{
-      <span class="hljs-built_in">string</span> aStr = to_string(a);
-      <span class="hljs-built_in">string</span> bStr = to_string(b);
-      aStr.append(to_string(b));
-      bStr.append(to_string(a));
-      <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i=<span class="hljs-number">0</span>;i&lt;aStr.size();i++){
-        <span class="hljs-keyword">if</span>(aStr.at(i)&lt;bStr.at(i))
-          <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;
-        <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(aStr.at(i)&gt;bStr.at(i))
-          <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
-      }
-      <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
-    }
-
-};
-</code></pre>
-<h3 id="&#x65B9;&#x6CD5;&#x4E8C;-&#x5F52;&#x5E76;&#x6392;&#x5E8F;">&#x65B9;&#x6CD5;&#x4E8C; &#x5F52;&#x5E76;&#x6392;&#x5E8F;</h3>
+                                <h4 id="17-&#x7535;&#x8BDD;&#x53F7;&#x7801;&#x7684;&#x5B57;&#x6BCD;&#x7EC4;&#x5408;"><a href="https://leetcode-cn.com/problems/letter-combinations-of-a-phone-number/" target="_blank">17. &#x7535;&#x8BDD;&#x53F7;&#x7801;&#x7684;&#x5B57;&#x6BCD;&#x7EC4;&#x5408;</a></h4>
+<p>&#x96BE;&#x5EA6; &#x4E2D;&#x7B49;</p>
+<p>&#x7ED9;&#x5B9A;&#x4E00;&#x4E2A;&#x4EC5;&#x5305;&#x542B;&#x6570;&#x5B57; <code>2-9</code> &#x7684;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x8FD4;&#x56DE;&#x6240;&#x6709;&#x5B83;&#x80FD;&#x8868;&#x793A;&#x7684;&#x5B57;&#x6BCD;&#x7EC4;&#x5408;&#x3002;&#x7B54;&#x6848;&#x53EF;&#x4EE5;&#x6309; <strong>&#x4EFB;&#x610F;&#x987A;&#x5E8F;</strong> &#x8FD4;&#x56DE;&#x3002;</p>
+<p>&#x7ED9;&#x51FA;&#x6570;&#x5B57;&#x5230;&#x5B57;&#x6BCD;&#x7684;&#x6620;&#x5C04;&#x5982;&#x4E0B;&#xFF08;&#x4E0E;&#x7535;&#x8BDD;&#x6309;&#x952E;&#x76F8;&#x540C;&#xFF09;&#x3002;&#x6CE8;&#x610F; 1 &#x4E0D;&#x5BF9;&#x5E94;&#x4EFB;&#x4F55;&#x5B57;&#x6BCD;&#x3002;</p>
+<p><img src="https://gitee.com/kevinzhang1999/my-picture/raw/master/uPic/17_telephone_keypad-1616300430311.png" alt="img"></p>
+<p><strong>&#x793A;&#x4F8B; 1&#xFF1A;</strong></p>
+<pre><code>&#x8F93;&#x5165;&#xFF1A;digits = &quot;23&quot;
+&#x8F93;&#x51FA;&#xFF1A;[&quot;ad&quot;,&quot;ae&quot;,&quot;af&quot;,&quot;bd&quot;,&quot;be&quot;,&quot;bf&quot;,&quot;cd&quot;,&quot;ce&quot;,&quot;cf&quot;]
+</code></pre><p><strong>&#x793A;&#x4F8B; 2&#xFF1A;</strong></p>
+<pre><code>&#x8F93;&#x5165;&#xFF1A;digits = &quot;&quot;
+&#x8F93;&#x51FA;&#xFF1A;[]
+</code></pre><p><strong>&#x793A;&#x4F8B; 3&#xFF1A;</strong></p>
+<pre><code>&#x8F93;&#x5165;&#xFF1A;digits = &quot;2&quot;
+&#x8F93;&#x51FA;&#xFF1A;[&quot;a&quot;,&quot;b&quot;,&quot;c&quot;]
+</code></pre><p><strong>&#x63D0;&#x793A;&#xFF1A;</strong></p>
+<ul>
+<li><code>0 &lt;= digits.length &lt;= 4</code></li>
+<li><code>digits[i]</code> &#x662F;&#x8303;&#x56F4; <code>[&apos;2&apos;, &apos;9&apos;]</code> &#x7684;&#x4E00;&#x4E2A;&#x6570;&#x5B57;&#x3002;</li>
+</ul>
+<h4 id="&#x89E3;&#x6CD5;">&#x89E3;&#x6CD5;</h4>
+<p>&#x8FD9;&#x9898;&#x5728;&#x4EE5;&#x524D;&#x5B66;&#x6821;&#x7684;&#x7A0B;&#x5E8F;&#x8BBE;&#x8BA1;&#x7ADE;&#x8D5B;&#x5199;&#x8FC7;, &#x6CA1;&#x5199;&#x51FA;&#x6765;, &#x8FD9;&#x6B21;&#x4E5F;&#x6CA1;&#x5199;&#x51FA;&#x6765;, &#x7B97;&#x6CD5;&#x601D;&#x60F3;&#x6CA1;&#x6709;&#x5B66;&#x7684;&#x8BDD;&#x5C31;&#x662F;&#x5199;&#x4E0D;&#x51FA;&#x6765;, &#x6CA1;&#x6709;&#x5B66;&#x4E60;&#x5C31;&#x662F;&#x4E0D;&#x4F1A;</p>
 
                                 
                                 </section>
@@ -574,12 +536,8 @@
 
             
                 
-                <a href="剑指 Offer 35. 复杂链表的复制.html" class="navigation navigation-prev " aria-label="Previous page: 剑指 Offer 35. 复杂链表的复制">
-                    <i class="fa fa-angle-left"></i>
-                </a>
                 
-                
-                <a href="剑指 Offer 50. 第一个只出现一次的字符.html" class="navigation navigation-next " aria-label="Next page: 剑指 Offer 50. 第一个只出现一次的字符">
+                <a href="⏰ 剑指 Offer 39. 数组中出现次数超过一半的数字.html" class="navigation navigation-next navigation-unique" aria-label="Next page: ⏰ 剑指 Offer 39. 数组中出现次数超过一半的数字">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -590,7 +548,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"剑指 Offer 45. 把数组排成最小的数","level":"1.3.8","depth":2,"next":{"title":"剑指 Offer 50. 第一个只出现一次的字符","level":"1.3.9","depth":2,"path":"剑指 offer/剑指 Offer 50. 第一个只出现一次的字符.md","ref":"剑指 offer/剑指 Offer 50. 第一个只出现一次的字符.md","articles":[]},"previous":{"title":"剑指 Offer 35. 复杂链表的复制","level":"1.3.7","depth":2,"path":"剑指 offer/剑指 Offer 35. 复杂链表的复制.md","ref":"剑指 offer/剑指 Offer 35. 复杂链表的复制.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"剑指 offer/剑指 Offer 45. 把数组排成最小的数.md","mtime":"2021-03-02T13:42:32.395Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-03-22T06:41:37.514Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"⏰ 17. 电话号码的字母组合","level":"1.3.1","depth":2,"next":{"title":"⏰ 剑指 Offer 39. 数组中出现次数超过一半的数字","level":"1.3.2","depth":2,"path":"剑指 offer/⏰ 剑指 Offer 39. 数组中出现次数超过一半的数字.md","ref":"剑指 offer/⏰ 剑指 Offer 39. 数组中出现次数超过一半的数字.md","articles":[]},"previous":{"title":"剑指 offer","level":"1.3","depth":1,"ref":"","articles":[{"title":"⏰ 17. 电话号码的字母组合","level":"1.3.1","depth":2,"path":"剑指 offer/⏰ 17. 电话号码的字母组合.md","ref":"剑指 offer/⏰ 17. 电话号码的字母组合.md","articles":[]},{"title":"⏰ 剑指 Offer 39. 数组中出现次数超过一半的数字","level":"1.3.2","depth":2,"path":"剑指 offer/⏰ 剑指 Offer 39. 数组中出现次数超过一半的数字.md","ref":"剑指 offer/⏰ 剑指 Offer 39. 数组中出现次数超过一半的数字.md","articles":[]},{"title":"⏰ 剑指 Offer 57 - II. 和为s的连续正数序列","level":"1.3.3","depth":2,"path":"剑指 offer/⏰ 剑指 Offer 57 - II. 和为s的连续正数序列.md","ref":"剑指 offer/⏰ 剑指 Offer 57 - II. 和为s的连续正数序列.md","articles":[]},{"title":"剑指 Offer 30. 包含min函数的栈","level":"1.3.4","depth":2,"path":"剑指 offer/剑指 Offer 30. 包含min函数的栈.md","ref":"剑指 offer/剑指 Offer 30. 包含min函数的栈.md","articles":[]},{"title":"剑指 Offer 32 - II. 从上到下打印二叉树 II","level":"1.3.5","depth":2,"path":"剑指 offer/剑指 Offer 32 - II. 从上到下打印二叉树 II.md","ref":"剑指 offer/剑指 Offer 32 - II. 从上到下打印二叉树 II.md","articles":[]},{"title":"剑指 Offer 32 - III. 从上到下打印二叉树 III","level":"1.3.6","depth":2,"path":"剑指 offer/剑指 Offer 32 - III. 从上到下打印二叉树 III.md","ref":"剑指 offer/剑指 Offer 32 - III. 从上到下打印二叉树 III.md","articles":[]},{"title":"剑指 Offer 35. 复杂链表的复制","level":"1.3.7","depth":2,"path":"剑指 offer/剑指 Offer 35. 复杂链表的复制.md","ref":"剑指 offer/剑指 Offer 35. 复杂链表的复制.md","articles":[]},{"title":"剑指 Offer 45. 把数组排成最小的数","level":"1.3.8","depth":2,"path":"剑指 offer/剑指 Offer 45. 把数组排成最小的数.md","ref":"剑指 offer/剑指 Offer 45. 把数组排成最小的数.md","articles":[]},{"title":"剑指 Offer 50. 第一个只出现一次的字符","level":"1.3.9","depth":2,"path":"剑指 offer/剑指 Offer 50. 第一个只出现一次的字符.md","ref":"剑指 offer/剑指 Offer 50. 第一个只出现一次的字符.md","articles":[]},{"title":"剑指 Offer 52. 两个链表的第一个公共节点","level":"1.3.10","depth":2,"path":"剑指 offer/剑指 Offer 52. 两个链表的第一个公共节点.md","ref":"剑指 offer/剑指 Offer 52. 两个链表的第一个公共节点.md","articles":[]},{"title":"剑指 Offer 53 - I. 在排序数组中查找数字 I","level":"1.3.11","depth":2,"path":"剑指 offer/剑指 Offer 53 - I. 在排序数组中查找数字 I.md","ref":"剑指 offer/剑指 Offer 53 - I. 在排序数组中查找数字 I.md","articles":[]},{"title":"剑指 Offer 53 - II. 0～n-1中缺失的数字","level":"1.3.12","depth":2,"path":"剑指 offer/剑指 Offer 53 - II. 0～n-1中缺失的数字.md","ref":"剑指 offer/剑指 Offer 53 - II. 0～n-1中缺失的数字.md","articles":[]},{"title":"剑指 Offer 54. 二叉搜索树的第k大节点","level":"1.3.13","depth":2,"path":"剑指 offer/剑指 Offer 54. 二叉搜索树的第k大节点.md","ref":"剑指 offer/剑指 Offer 54. 二叉搜索树的第k大节点.md","articles":[]},{"title":"剑指 Offer 55 - I. 二叉树的深度","level":"1.3.14","depth":2,"path":"剑指 offer/剑指 Offer 55 - I. 二叉树的深度.md","ref":"剑指 offer/剑指 Offer 55 - I. 二叉树的深度.md","articles":[]},{"title":"剑指 Offer 55 - II. 平衡二叉树","level":"1.3.15","depth":2,"path":"剑指 offer/剑指 Offer 55 - II. 平衡二叉树.md","ref":"剑指 offer/剑指 Offer 55 - II. 平衡二叉树.md","articles":[]},{"title":"剑指 Offer 57. 和为s的两个数字","level":"1.3.16","depth":2,"path":"剑指 offer/剑指 Offer 57. 和为s的两个数字.md","ref":"剑指 offer/剑指 Offer 57. 和为s的两个数字.md","articles":[]},{"title":"剑指 Offer 59 - II. 队列的最大值","level":"1.3.17","depth":2,"path":"剑指 offer/剑指 Offer 59 - II. 队列的最大值.md","ref":"剑指 offer/剑指 Offer 59 - II. 队列的最大值.md","articles":[]},{"title":"剑指 Offer 68 - I. 二叉搜索树的最近公共祖先","level":"1.3.18","depth":2,"path":"剑指 offer/剑指 Offer 68 - I. 二叉搜索树的最近公共祖先.md","ref":"剑指 offer/剑指 Offer 68 - I. 二叉搜索树的最近公共祖先.md","articles":[]},{"title":"剑指 Offer 68 - II. 二叉树的最近公共祖先","level":"1.3.19","depth":2,"path":"剑指 offer/剑指 Offer 68 - II. 二叉树的最近公共祖先.md","ref":"剑指 offer/剑指 Offer 68 - II. 二叉树的最近公共祖先.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"剑指 offer/⏰ 17. 电话号码的字母组合.md","mtime":"2021-03-21T04:23:39.325Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-03-22T06:41:37.514Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
