@@ -1,11 +1,14 @@
 # leetcode 刷题笔记
 
 - leetcode题库
+  * [⏰ 17. 电话号码的字母组合](leetcode题库/⏰ 17. 电话号码的字母组合.md)
   * [450. 删除二叉搜索树中的节点](leetcode题库/450. 删除二叉搜索树中的节点.md)
 - 剑指 offer
-  * [⏰ 17. 电话号码的字母组合](剑指 offer/⏰ 17. 电话号码的字母组合.md)
+  * [⏰ 5. 最长回文子串](剑指 offer/⏰ 5. 最长回文子串.md)
   * [⏰ 剑指 Offer 39. 数组中出现次数超过一半的数字](剑指 offer/⏰ 剑指 Offer 39. 数组中出现次数超过一半的数字.md)
   * [⏰ 剑指 Offer 57 - II. 和为s的连续正数序列](剑指 offer/⏰ 剑指 Offer 57 - II. 和为s的连续正数序列.md)
+  * [⏰ 剑指 Offer 59 - I. 滑动窗口的最大值](剑指 offer/⏰ 剑指 Offer 59 - I. 滑动窗口的最大值.md)
+  * [⏰剑指 Offer 62. 圆圈中最后剩下的数字](剑指 offer/⏰剑指 Offer 62. 圆圈中最后剩下的数字.md)
   * [剑指 Offer 30. 包含min函数的栈](剑指 offer/剑指 Offer 30. 包含min函数的栈.md)
   * [剑指 Offer 32 - II. 从上到下打印二叉树 II](剑指 offer/剑指 Offer 32 - II. 从上到下打印二叉树 II.md)
   * [剑指 Offer 32 - III. 从上到下打印二叉树 III](剑指 offer/剑指 Offer 32 - III. 从上到下打印二叉树 III.md)
@@ -19,9 +22,11 @@
   * [剑指 Offer 55 - I. 二叉树的深度](剑指 offer/剑指 Offer 55 - I. 二叉树的深度.md)
   * [剑指 Offer 55 - II. 平衡二叉树](剑指 offer/剑指 Offer 55 - II. 平衡二叉树.md)
   * [剑指 Offer 57. 和为s的两个数字](剑指 offer/剑指 Offer 57. 和为s的两个数字.md)
+  * [剑指 Offer 58 - I. 翻转单词顺序](剑指 offer/剑指 Offer 58 - I. 翻转单词顺序.md)
+  * [剑指 Offer 58 - II. 左旋转字符串](剑指 offer/剑指 Offer 58 - II. 左旋转字符串.md)
   * [剑指 Offer 59 - II. 队列的最大值](剑指 offer/剑指 Offer 59 - II. 队列的最大值.md)
+  * [剑指 Offer 61. 扑克牌中的顺子](剑指 offer/剑指 Offer 61. 扑克牌中的顺子.md)
   * [剑指 Offer 68 - I. 二叉搜索树的最近公共祖先](剑指 offer/剑指 Offer 68 - I. 二叉搜索树的最近公共祖先.md)
   * [剑指 Offer 68 - II. 二叉树的最近公共祖先](剑指 offer/剑指 Offer 68 - II. 二叉树的最近公共祖先.md)
-- 算法思想
-  * [动态规划](算法思想/动态规划.md)
+- [算法思想](算法思想/算法思想.md)
 - [解题套路](解题套路/解题套路.md)
