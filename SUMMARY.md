@@ -1,19 +1,22 @@
 # leetcode 刷题笔记
 
 - leetcode题库
-  * [⏰ 17. 电话号码的字母组合](leetcode题库/⏰ 17. 电话号码的字母组合.md)
+  * [17. 电话号码的字母组合](leetcode题库/17. 电话号码的字母组合.md)
   * [450. 删除二叉搜索树中的节点](leetcode题库/450. 删除二叉搜索树中的节点.md)
+  * [46. 全排列](leetcode题库/46. 全排列.md)
+  * [5. 最长回文子串](leetcode题库/5. 最长回文子串.md)
 - 剑指 offer
-  * [⏰ 5. 最长回文子串](剑指 offer/⏰ 5. 最长回文子串.md)
   * [⏰ 剑指 Offer 39. 数组中出现次数超过一半的数字](剑指 offer/⏰ 剑指 Offer 39. 数组中出现次数超过一半的数字.md)
   * [⏰ 剑指 Offer 57 - II. 和为s的连续正数序列](剑指 offer/⏰ 剑指 Offer 57 - II. 和为s的连续正数序列.md)
   * [⏰ 剑指 Offer 59 - I. 滑动窗口的最大值](剑指 offer/⏰ 剑指 Offer 59 - I. 滑动窗口的最大值.md)
   * [⏰剑指 Offer 62. 圆圈中最后剩下的数字](剑指 offer/⏰剑指 Offer 62. 圆圈中最后剩下的数字.md)
+  * [剑指 Offer 12. 矩阵中的路径](剑指 offer/剑指 Offer 12. 矩阵中的路径.md)
   * [剑指 Offer 30. 包含min函数的栈](剑指 offer/剑指 Offer 30. 包含min函数的栈.md)
   * [剑指 Offer 32 - II. 从上到下打印二叉树 II](剑指 offer/剑指 Offer 32 - II. 从上到下打印二叉树 II.md)
   * [剑指 Offer 32 - III. 从上到下打印二叉树 III](剑指 offer/剑指 Offer 32 - III. 从上到下打印二叉树 III.md)
   * [剑指 Offer 35. 复杂链表的复制](剑指 offer/剑指 Offer 35. 复杂链表的复制.md)
   * [剑指 Offer 45. 把数组排成最小的数](剑指 offer/剑指 Offer 45. 把数组排成最小的数.md)
+  * [剑指 Offer 48. 最长不含重复字符的子字符串](剑指 offer/剑指 Offer 48. 最长不含重复字符的子字符串.md)
   * [剑指 Offer 50. 第一个只出现一次的字符](剑指 offer/剑指 Offer 50. 第一个只出现一次的字符.md)
   * [剑指 Offer 52. 两个链表的第一个公共节点](剑指 offer/剑指 Offer 52. 两个链表的第一个公共节点.md)
   * [剑指 Offer 53 - I. 在排序数组中查找数字 I](剑指 offer/剑指 Offer 53 - I. 在排序数组中查找数字 I.md)

@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>算法思想 · GitBook</title>
+        <title>46. 全排列 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../解题套路/解题套路.html" />
+    <link rel="next" href="5. 最长回文子串.html" />
     
     
-    <link rel="prev" href="../剑指 offer/剑指 Offer 68 - II. 二叉树的最近公共祖先.html" />
+    <link rel="prev" href="450. 删除二叉搜索树中的节点.html" />
     
 
     </head>
@@ -116,9 +116,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.2.1" data-path="../leetcode题库/17. 电话号码的字母组合.html">
+        <li class="chapter " data-level="1.2.1" data-path="17. 电话号码的字母组合.html">
             
-                <a href="../leetcode题库/17. 电话号码的字母组合.html">
+                <a href="17. 电话号码的字母组合.html">
             
                     
                     17. 电话号码的字母组合
@@ -129,9 +129,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.2" data-path="../leetcode题库/450. 删除二叉搜索树中的节点.html">
+        <li class="chapter " data-level="1.2.2" data-path="450. 删除二叉搜索树中的节点.html">
             
-                <a href="../leetcode题库/450. 删除二叉搜索树中的节点.html">
+                <a href="450. 删除二叉搜索树中的节点.html">
             
                     
                     450. 删除二叉搜索树中的节点
@@ -142,9 +142,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.3" data-path="../leetcode题库/46. 全排列.html">
+        <li class="chapter active" data-level="1.2.3" data-path="46. 全排列.html">
             
-                <a href="../leetcode题库/46. 全排列.html">
+                <a href="46. 全排列.html">
             
                     
                     46. 全排列
@@ -155,9 +155,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.4" data-path="../leetcode题库/5. 最长回文子串.html">
+        <li class="chapter " data-level="1.2.4" data-path="5. 最长回文子串.html">
             
-                <a href="../leetcode题库/5. 最长回文子串.html">
+                <a href="5. 最长回文子串.html">
             
                     
                     5. 最长回文子串
@@ -517,9 +517,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.4" data-path="算法思想.html">
+        <li class="chapter " data-level="1.4" data-path="../算法思想/算法思想.html">
             
-                <a href="算法思想.html">
+                <a href="../算法思想/算法思想.html">
             
                     
                     算法思想
@@ -573,7 +573,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >算法思想</a>
+        <a href=".." >46. 全排列</a>
     </h1>
 </div>
 
@@ -588,21 +588,51 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x7B97;&#x6CD5;&#x601D;&#x60F3;">&#x7B97;&#x6CD5;&#x601D;&#x60F3;</h1>
-<h2 id="&#x7B97;&#x6CD5;&#x65F6;&#x95F4;&#x590D;&#x6742;&#x5EA6;">&#x7B97;&#x6CD5;&#x65F6;&#x95F4;&#x590D;&#x6742;&#x5EA6;</h2>
-<h2 id="&#x9012;&#x5F52;&#x65B9;&#x7A0B;&#x7684;&#x6C42;&#x89E3;">&#x9012;&#x5F52;&#x65B9;&#x7A0B;&#x7684;&#x6C42;&#x89E3;</h2>
-<h3 id="&#x8FED;&#x4EE3;&#x6CD5;">&#x8FED;&#x4EE3;&#x6CD5;</h3>
-<h3 id="&#x5DEE;&#x6D88;&#x6CD5;&#x5316;&#x7B80;">&#x5DEE;&#x6D88;&#x6CD5;&#x5316;&#x7B80;</h3>
-<h3 id="&#x9012;&#x5F52;&#x6811;&#x6A21;&#x578B;">&#x9012;&#x5F52;&#x6811;&#x6A21;&#x578B;</h3>
-<h3 id="&#x4E3B;&#x5B9A;&#x7406;&#x7684;&#x8BC1;&#x660E;&#x548C;&#x5E94;&#x7528;">&#x4E3B;&#x5B9A;&#x7406;&#x7684;&#x8BC1;&#x660E;&#x548C;&#x5E94;&#x7528;</h3>
-<h2 id="&#x5206;&#x6CBB;&#x6CD5;">&#x5206;&#x6CBB;&#x6CD5;</h2>
-<p><img src="https://gitee.com/kevinzhang1999/my-picture/raw/master/uPic/image-20210325154056795-1616658056990.png" alt="image-20210325154056795"></p>
-<h2 id="&#x52A8;&#x6001;&#x89C4;&#x5212;">&#x52A8;&#x6001;&#x89C4;&#x5212;</h2>
-<p><img src="https://gitee.com/kevinzhang1999/my-picture/raw/master/uPic/image-20210328170526091-1616922326434.png" alt="image-20210328170526091"></p>
-<p>&#x6839;&#x636E;&#x5B50;&#x95EE;&#x9898;&#x7684;&#x6700;&#x4F18;&#x89E3;&#x6C42;&#x51FA;&#x95EE;&#x9898;&#x7684;&#x89E3;</p>
-<p><img src="https://gitee.com/kevinzhang1999/my-picture/raw/master/uPic/image-20210331165231097-1617180751208.png" alt="image-20210331165231097"></p>
-<h2 id="&#x8D2A;&#x5FC3;">&#x8D2A;&#x5FC3;</h2>
-<h2 id="&#x56DE;&#x6EAF;">&#x56DE;&#x6EAF;</h2>
+                                <h4 id="46-&#x5168;&#x6392;&#x5217;"><a href="https://leetcode-cn.com/problems/permutations/" target="_blank">46. &#x5168;&#x6392;&#x5217;</a></h4>
+<p>&#x96BE;&#x5EA6;&#x4E2D;&#x7B49;1258&#x6536;&#x85CF;&#x5206;&#x4EAB;&#x5207;&#x6362;&#x4E3A;&#x82F1;&#x6587;&#x63A5;&#x6536;&#x52A8;&#x6001;&#x53CD;&#x9988;</p>
+<p>&#x7ED9;&#x5B9A;&#x4E00;&#x4E2A; <strong>&#x6CA1;&#x6709;&#x91CD;&#x590D;</strong> &#x6570;&#x5B57;&#x7684;&#x5E8F;&#x5217;&#xFF0C;&#x8FD4;&#x56DE;&#x5176;&#x6240;&#x6709;&#x53EF;&#x80FD;&#x7684;&#x5168;&#x6392;&#x5217;&#x3002;</p>
+<p><strong>&#x793A;&#x4F8B;:</strong></p>
+<pre><code>&#x8F93;&#x5165;: [1,2,3]
+&#x8F93;&#x51FA;:
+[
+  [1,2,3],
+  [1,3,2],
+  [2,1,3],
+  [2,3,1],
+  [3,1,2],
+  [3,2,1]
+]
+</code></pre><h4 id="&#x89E3;&#x6CD5;-&#x56DE;&#x6EAF;&#x6CD5;--&#x6DF1;&#x5EA6;&#x4F18;&#x5148;&#x641C;&#x7D22;">&#x89E3;&#x6CD5; &#x56DE;&#x6EAF;&#x6CD5; + &#x6DF1;&#x5EA6;&#x4F18;&#x5148;&#x641C;&#x7D22;</h4>
+<p>&#x548C;&#x7535;&#x8BDD;&#x53F7;&#x7801;&#x7684;&#x5B57;&#x6BCD;&#x7EC4;&#x5408;&#x633A;&#x50CF;&#x7684;, &#x5C31;&#x662F;&#x8FD9;&#x91CC;&#x8981;&#x7528;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#x8BB0;&#x5F55;&#x6709;&#x6CA1;&#x6709;&#x88AB;&#x653E;&#x5165;&#x4E4B;&#x524D;&#x7684;&#x6392;&#x5217;</p>
+<pre><code class="lang-java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Solution</span> </span>{
+    <span class="hljs-keyword">public</span> List&lt;List&lt;Integer&gt;&gt; permute(<span class="hljs-keyword">int</span>[] nums) {
+      List&lt;List&lt;Integer&gt;&gt; res = <span class="hljs-keyword">new</span> ArrayList&lt;&gt;();    
+      <span class="hljs-keyword">int</span>[] combination = <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[nums.length];
+      <span class="hljs-keyword">int</span>[] isAccessed = <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[nums.length];
+      dfs(nums, <span class="hljs-number">0</span>, combination, res,isAccessed);
+      <span class="hljs-keyword">return</span> res;
+    }
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">dfs</span><span class="hljs-params">(<span class="hljs-keyword">int</span>[] nums, <span class="hljs-keyword">int</span> index, <span class="hljs-keyword">int</span>[] combination, List&lt;List&lt;Integer&gt;&gt; res, <span class="hljs-keyword">int</span>[] isAccessed)</span></span>{
+      <span class="hljs-keyword">if</span>(index == nums.length){
+        List&lt;Integer&gt; l = <span class="hljs-keyword">new</span> ArrayList&lt;&gt;();
+        <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i=<span class="hljs-number">0</span>;i&lt;nums.length;i++){
+          l.add(combination[i]);
+        }
+        res.add(l);
+        <span class="hljs-keyword">return</span>;
+      }
+      <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i =<span class="hljs-number">0</span>;i&lt;nums.length; i++){
+        <span class="hljs-keyword">if</span>(isAccessed[i]==<span class="hljs-number">1</span>){
+          <span class="hljs-keyword">continue</span>;
+        }
+        combination[index] = nums[i];
+        isAccessed[i]=<span class="hljs-number">1</span>;
+        dfs(nums, index+<span class="hljs-number">1</span>, combination, res, isAccessed);
+        isAccessed[i]=<span class="hljs-number">0</span>;
+      }
+    }
+}
+</code></pre>
 
                                 
                                 </section>
@@ -630,12 +660,12 @@
 
             
                 
-                <a href="../剑指 offer/剑指 Offer 68 - II. 二叉树的最近公共祖先.html" class="navigation navigation-prev " aria-label="Previous page: 剑指 Offer 68 - II. 二叉树的最近公共祖先">
+                <a href="450. 删除二叉搜索树中的节点.html" class="navigation navigation-prev " aria-label="Previous page: 450. 删除二叉搜索树中的节点">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="../解题套路/解题套路.html" class="navigation navigation-next " aria-label="Next page: 解题套路">
+                <a href="5. 最长回文子串.html" class="navigation navigation-next " aria-label="Next page: 5. 最长回文子串">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -646,7 +676,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"算法思想","level":"1.4","depth":1,"next":{"title":"解题套路","level":"1.5","depth":1,"path":"解题套路/解题套路.md","ref":"解题套路/解题套路.md","articles":[]},"previous":{"title":"剑指 Offer 68 - II. 二叉树的最近公共祖先","level":"1.3.25","depth":2,"path":"剑指 offer/剑指 Offer 68 - II. 二叉树的最近公共祖先.md","ref":"剑指 offer/剑指 Offer 68 - II. 二叉树的最近公共祖先.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"算法思想/算法思想.md","mtime":"2021-03-31T10:43:06.905Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-04-02T12:08:02.910Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"46. 全排列","level":"1.2.3","depth":2,"next":{"title":"5. 最长回文子串","level":"1.2.4","depth":2,"path":"leetcode题库/5. 最长回文子串.md","ref":"leetcode题库/5. 最长回文子串.md","articles":[]},"previous":{"title":"450. 删除二叉搜索树中的节点","level":"1.2.2","depth":2,"path":"leetcode题库/450. 删除二叉搜索树中的节点.md","ref":"leetcode题库/450. 删除二叉搜索树中的节点.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"leetcode题库/46. 全排列.md","mtime":"2021-04-02T12:04:40.427Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-04-02T12:08:02.910Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
