@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>剑指 Offer 55 - II. 平衡二叉树 · GitBook</title>
+        <title>⏰ 剑指 Offer 13. 机器人的运动范围 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,8 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="剑指 Offer 57. 和为s的两个数字.html" />
+    <link rel="next" href="⏰ 剑指 Offer 39. 数组中出现次数超过一半的数字.html" />
     
-    
-    <link rel="prev" href="剑指 Offer 55 - I. 二叉树的深度.html" />
     
 
     </head>
@@ -187,7 +185,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.3.1" data-path="⏰ 剑指 Offer 13. 机器人的运动范围.html">
+        <li class="chapter active" data-level="1.3.1" data-path="⏰ 剑指 Offer 13. 机器人的运动范围.html">
             
                 <a href="⏰ 剑指 Offer 13. 机器人的运动范围.html">
             
@@ -434,7 +432,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.3.20" data-path="剑指 Offer 55 - II. 平衡二叉树.html">
+        <li class="chapter " data-level="1.3.20" data-path="剑指 Offer 55 - II. 平衡二叉树.html">
             
                 <a href="剑指 Offer 55 - II. 平衡二叉树.html">
             
@@ -618,7 +616,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >剑指 Offer 55 - II. 平衡二叉树</a>
+        <a href=".." >⏰ 剑指 Offer 13. 机器人的运动范围</a>
     </h1>
 </div>
 
@@ -633,100 +631,90 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h4 id="&#x5251;&#x6307;-offer-55---ii-&#x5E73;&#x8861;&#x4E8C;&#x53C9;&#x6811;"><a href="https://leetcode-cn.com/problems/ping-heng-er-cha-shu-lcof/" target="_blank">&#x5251;&#x6307; Offer 55 - II. &#x5E73;&#x8861;&#x4E8C;&#x53C9;&#x6811;</a></h4>
-<p>&#x96BE;&#x5EA6;&#x7B80;&#x5355;124</p>
-<p>&#x8F93;&#x5165;&#x4E00;&#x68F5;&#x4E8C;&#x53C9;&#x6811;&#x7684;&#x6839;&#x8282;&#x70B9;&#xFF0C;&#x5224;&#x65AD;&#x8BE5;&#x6811;&#x662F;&#x4E0D;&#x662F;&#x5E73;&#x8861;&#x4E8C;&#x53C9;&#x6811;&#x3002;&#x5982;&#x679C;&#x67D0;&#x4E8C;&#x53C9;&#x6811;&#x4E2D;&#x4EFB;&#x610F;&#x8282;&#x70B9;&#x7684;&#x5DE6;&#x53F3;&#x5B50;&#x6811;&#x7684;&#x6DF1;&#x5EA6;&#x76F8;&#x5DEE;&#x4E0D;&#x8D85;&#x8FC7;1&#xFF0C;&#x90A3;&#x4E48;&#x5B83;&#x5C31;&#x662F;&#x4E00;&#x68F5;&#x5E73;&#x8861;&#x4E8C;&#x53C9;&#x6811;&#x3002;</p>
-<p><strong>&#x793A;&#x4F8B; 1:</strong></p>
-<p>&#x7ED9;&#x5B9A;&#x4E8C;&#x53C9;&#x6811; <code>[3,9,20,null,null,15,7]</code></p>
-<pre><code>    3
-   / \
-  9  20
-    /  \
-   15   7
-</code></pre><p>&#x8FD4;&#x56DE; <code>true</code> &#x3002;</p>
-<p><strong>&#x793A;&#x4F8B; 2:</strong></p>
-<p>&#x7ED9;&#x5B9A;&#x4E8C;&#x53C9;&#x6811; <code>[1,2,2,3,3,null,null,4,4]</code></p>
-<pre><code>       1
-      / \
-     2   2
-    / \
-   3   3
-  / \
- 4   4
-</code></pre><p>&#x8FD4;&#x56DE; <code>false</code> &#x3002;</p>
-<p><strong>&#x9650;&#x5236;&#xFF1A;</strong></p>
+                                <h4 id="&#x5251;&#x6307;-offer-13-&#x673A;&#x5668;&#x4EBA;&#x7684;&#x8FD0;&#x52A8;&#x8303;&#x56F4;"><a href="https://leetcode-cn.com/problems/ji-qi-ren-de-yun-dong-fan-wei-lcof/" target="_blank">&#x5251;&#x6307; Offer 13. &#x673A;&#x5668;&#x4EBA;&#x7684;&#x8FD0;&#x52A8;&#x8303;&#x56F4;</a></h4>
+<p>&#x96BE;&#x5EA6;&#x4E2D;&#x7B49;260</p>
+<p>&#x5730;&#x4E0A;&#x6709;&#x4E00;&#x4E2A;m&#x884C;n&#x5217;&#x7684;&#x65B9;&#x683C;&#xFF0C;&#x4ECE;&#x5750;&#x6807; <code>[0,0]</code> &#x5230;&#x5750;&#x6807; <code>[m-1,n-1]</code> &#x3002;&#x4E00;&#x4E2A;&#x673A;&#x5668;&#x4EBA;&#x4ECE;&#x5750;&#x6807; <code>[0, 0]</code>&#x7684;&#x683C;&#x5B50;&#x5F00;&#x59CB;&#x79FB;&#x52A8;&#xFF0C;&#x5B83;&#x6BCF;&#x6B21;&#x53EF;&#x4EE5;&#x5411;&#x5DE6;&#x3001;&#x53F3;&#x3001;&#x4E0A;&#x3001;&#x4E0B;&#x79FB;&#x52A8;&#x4E00;&#x683C;&#xFF08;&#x4E0D;&#x80FD;&#x79FB;&#x52A8;&#x5230;&#x65B9;&#x683C;&#x5916;&#xFF09;&#xFF0C;&#x4E5F;&#x4E0D;&#x80FD;&#x8FDB;&#x5165;&#x884C;&#x5750;&#x6807;&#x548C;&#x5217;&#x5750;&#x6807;&#x7684;&#x6570;&#x4F4D;&#x4E4B;&#x548C;&#x5927;&#x4E8E;k&#x7684;&#x683C;&#x5B50;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x5F53;k&#x4E3A;18&#x65F6;&#xFF0C;&#x673A;&#x5668;&#x4EBA;&#x80FD;&#x591F;&#x8FDB;&#x5165;&#x65B9;&#x683C; [35, 37] &#xFF0C;&#x56E0;&#x4E3A;3+5+3+7=18&#x3002;&#x4F46;&#x5B83;&#x4E0D;&#x80FD;&#x8FDB;&#x5165;&#x65B9;&#x683C; [35, 38]&#xFF0C;&#x56E0;&#x4E3A;3+5+3+8=19&#x3002;&#x8BF7;&#x95EE;&#x8BE5;&#x673A;&#x5668;&#x4EBA;&#x80FD;&#x591F;&#x5230;&#x8FBE;&#x591A;&#x5C11;&#x4E2A;&#x683C;&#x5B50;&#xFF1F;</p>
+<p><strong>&#x793A;&#x4F8B; 1&#xFF1A;</strong></p>
+<pre><code>&#x8F93;&#x5165;&#xFF1A;m = 2, n = 3, k = 1
+&#x8F93;&#x51FA;&#xFF1A;3
+</code></pre><p><strong>&#x793A;&#x4F8B; 2&#xFF1A;</strong></p>
+<pre><code>&#x8F93;&#x5165;&#xFF1A;m = 3, n = 1, k = 0
+&#x8F93;&#x51FA;&#xFF1A;1
+</code></pre><p><strong>&#x63D0;&#x793A;&#xFF1A;</strong></p>
 <ul>
-<li><code>0 &lt;= &#x6811;&#x7684;&#x7ED3;&#x70B9;&#x4E2A;&#x6570; &lt;= 10000</code></li>
+<li><code>1 &lt;= n,m &lt;= 100</code></li>
+<li><code>0 &lt;= k &lt;= 20</code></li>
 </ul>
-<h4 id="&#x89E3;&#x6CD5;&#x4E00;">&#x89E3;&#x6CD5;&#x4E00;</h4>
-<p>&#x6DF1;&#x5EA6;&#x4F18;&#x5148;&#x904D;&#x5386;, &#x6BCF;&#x4E2A;&#x7ED3;&#x70B9;&#x90FD;&#x8BA1;&#x7B97;&#x5DE6;&#x53F3;&#x5B50;&#x6811;&#x4EE5;&#x53CA;&#x81EA;&#x8EAB;&#x662F;&#x5426;&#x5E73;&#x8861;</p>
-<blockquote>
-<p>&#x771F;&#x7684;&#x6162;</p>
-</blockquote>
+<h4 id="&#x89E3;&#x6CD5;&#x4E00;-&#x56DE;&#x6EAF;&#x6CD5;&#x6DF1;&#x5EA6;&#x4F18;&#x5148;&#x641C;&#x7D22;">&#x89E3;&#x6CD5;&#x4E00; &#x56DE;&#x6EAF;&#x6CD5;&#x6DF1;&#x5EA6;&#x4F18;&#x5148;&#x641C;&#x7D22;</h4>
+<p>&#x7EC6;&#x8BFB;&#x9898;&#x76EE;&#x4F1A;&#x53D1;&#x73B0;&#x53EA;&#x8981;&#x5411;&#x53F3;&#x6216;&#x8005;&#x5411;&#x4E0B;&#x79FB;&#x52A8;, &#x6240;&#x4EE5;&#x5411;&#x4E0A;&#x548C;&#x5411;&#x4E0B;&#x53EF;&#x4EE5;&#x5FFD;&#x7565;</p>
 <pre><code class="lang-java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Solution</span> </span>{
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">isBalanced</span><span class="hljs-params">(TreeNode root)</span> </span>{
-      <span class="hljs-keyword">if</span>(root==<span class="hljs-keyword">null</span>){
-        <span class="hljs-keyword">return</span> <span class="hljs-keyword">true</span>;
-      }
-      <span class="hljs-keyword">boolean</span> leftIs = isBalanced(root.left);
-      <span class="hljs-keyword">boolean</span> rightIs = isBalanced(root.right);
-      <span class="hljs-keyword">int</span> leftH = getHeight(root.left);
-      <span class="hljs-keyword">int</span> rightH = getHeight(root.right);
-      <span class="hljs-keyword">if</span>(leftIs &amp; rightIs){
-        <span class="hljs-keyword">if</span>(leftH-rightH&lt;=<span class="hljs-number">1</span> &amp;&amp; leftH-rightH&gt;=-<span class="hljs-number">1</span>){
-          <span class="hljs-keyword">return</span> <span class="hljs-keyword">true</span>;
-        }<span class="hljs-keyword">else</span>{
-          <span class="hljs-keyword">return</span> <span class="hljs-keyword">false</span>;
-        }
-      }<span class="hljs-keyword">else</span>{
-        <span class="hljs-keyword">return</span> <span class="hljs-keyword">false</span>;
-      }
+    <span class="hljs-keyword">int</span> res = <span class="hljs-number">0</span>;
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">movingCount</span><span class="hljs-params">(<span class="hljs-keyword">int</span> m, <span class="hljs-keyword">int</span> n, <span class="hljs-keyword">int</span> k)</span> </span>{
+      <span class="hljs-keyword">int</span>[][] isAccessed = <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[n][m];
+      dfs(isAccessed, k, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>);
+      <span class="hljs-keyword">return</span> res;
     }
-    <span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">getHeight</span><span class="hljs-params">(TreeNode root)</span></span>{
-      <span class="hljs-keyword">if</span>(root==<span class="hljs-keyword">null</span>){
-        <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">dfs</span><span class="hljs-params">(<span class="hljs-keyword">int</span>[][] isAccessed, <span class="hljs-keyword">int</span> k, <span class="hljs-keyword">int</span> x, <span class="hljs-keyword">int</span> y)</span></span>{
+      <span class="hljs-comment">// &#x8D85;&#x51FA;&#x8FB9;&#x754C; &#x6216; &#x5DF2;&#x7ECF;&#x8BBF;&#x95EE;&#x8FC7; , &#x76F4;&#x63A5;&#x8FD4;&#x56DE; </span>
+      <span class="hljs-keyword">if</span>(x&lt;<span class="hljs-number">0</span> || y&lt;<span class="hljs-number">0</span> || x&gt;=isAccessed[<span class="hljs-number">0</span>].length || y&gt;=isAccessed.length || isAccessed[y][x]==<span class="hljs-number">1</span>){
+        <span class="hljs-keyword">return</span>;
       }
-      <span class="hljs-keyword">int</span> leftH = getHeight(root.left);
-      <span class="hljs-keyword">int</span> rightH = getHeight(root.right);
-      <span class="hljs-keyword">return</span> leftH&gt;rightH ? leftH+<span class="hljs-number">1</span> : rightH+<span class="hljs-number">1</span>;
-    }    
-}
-</code></pre>
-<h4 id="&#x89E3;&#x6CD5;&#x4E8C;">&#x89E3;&#x6CD5;&#x4E8C;</h4>
-<p>&#x540C;&#x6837;&#x6DF1;&#x5EA6;&#x4F18;&#x5148;&#x904D;&#x5386;, &#x6BCF;&#x4E2A;&#x7ED3;&#x70B9;&#x9012;&#x5F52;&#x8FD4;&#x56DE;&#x65F6;&#x5F97;&#x51FA;&#x81EA;&#x5DF1;&#x7684;&#x9AD8;&#x5EA6;&#x5DEE;, &#x7136;&#x540E;&#x5224;&#x65AD;&#x662F;&#x5426;&#x5DE6;&#x53F3;&#x6DF1;&#x5EA6;&#x4E0D;&#x8D85;&#x8FC7; 1</p>
-<blockquote>
-<p>&#x5F53;&#x4E00;&#x4E2A;&#x7ED3;&#x70B9;&#x7684;&#x5DE6;&#x53F3;&#x6DF1;&#x5EA6;&#x5DEE;&#x8D85;&#x8FC7;&#x4E00;&#x65F6;, &#x5982;&#x4F55;&#x544A;&#x8BC9;&#x7ED9;&#x53E6;&#x4E00;&#x4E2A;&#x4E00;&#x5F00;&#x59CB;&#x8C03;&#x7528;&#x5B83;&#x7684;&#x51FD;&#x6570;</p>
-<ul>
-<li><p>&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x7C7B;&#x95F4;&#x53D8;&#x91CF; flag</p>
-</li>
-<li><p>&#x8FD4;&#x56DE; -1, &#x7136;&#x540E;&#x52A0;&#x4E0A;&#x4E00;&#x6BB5;&#x5224;&#x65AD;&#x51FD;&#x6570;, &#x5DE6;&#x53F3;&#x7ED3;&#x70B9;&#x8FD4;&#x56DE;-1,&#x90A3;&#x6B64;&#x51FD;&#x6570;&#x4E5F;&#x8FD4;&#x56DE;-1&#x4EE3;&#x8868;&#x4E0D;&#x5E73;&#x8861;</p>
-</li>
-</ul>
-</blockquote>
-<pre><code class="lang-java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Solution</span> </span>{
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">isBalanced</span><span class="hljs-params">(TreeNode root)</span> </span>{
-      <span class="hljs-keyword">if</span>(root==<span class="hljs-keyword">null</span>){
-        <span class="hljs-keyword">return</span> <span class="hljs-keyword">true</span>;
+      <span class="hljs-comment">// &#x8BA1;&#x7B97;&#x6570;&#x4F4D;&#x4E4B;&#x548C;</span>
+      <span class="hljs-keyword">int</span> sumX = <span class="hljs-number">0</span>;
+      <span class="hljs-keyword">int</span> sumY = <span class="hljs-number">0</span>;
+      <span class="hljs-keyword">int</span> m = x;
+      <span class="hljs-keyword">while</span>(m!=<span class="hljs-number">0</span>){
+        sumX += m%<span class="hljs-number">10</span>;
+        m = m/<span class="hljs-number">10</span>;
       }
-      <span class="hljs-keyword">return</span> getHeight(root)==-<span class="hljs-number">1</span> ? <span class="hljs-keyword">false</span> : <span class="hljs-keyword">true</span>;
-    }
-    <span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">getHeight</span><span class="hljs-params">(TreeNode root)</span></span>{
-      <span class="hljs-keyword">if</span>(root ==<span class="hljs-keyword">null</span>){
-        <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+      m = y;
+      <span class="hljs-keyword">while</span>(m!=<span class="hljs-number">0</span>){
+        sumY += m%<span class="hljs-number">10</span>;
+        m = m/<span class="hljs-number">10</span>;
       }
-      <span class="hljs-keyword">int</span> leftH = getHeight(root.left);
-      <span class="hljs-keyword">int</span> rightH = getHeight(root.right);
-      <span class="hljs-keyword">if</span>(leftH==-<span class="hljs-number">1</span> || rightH==-<span class="hljs-number">1</span>){
-        <span class="hljs-keyword">return</span> -<span class="hljs-number">1</span>;
+      <span class="hljs-comment">// &#x6570;&#x4F4D;&#x548C;&#x5927;&#x4E8E; k &#x76F4;&#x63A5;&#x8FD4;&#x56DE;</span>
+      <span class="hljs-keyword">if</span>(sumX+sumY&gt;k){
+        <span class="hljs-keyword">return</span>;
       }
-      <span class="hljs-keyword">if</span>(leftH-rightH &gt;<span class="hljs-number">1</span> || leftH-rightH &lt;-<span class="hljs-number">1</span>){
-        <span class="hljs-keyword">return</span> -<span class="hljs-number">1</span>;
-      }
-      <span class="hljs-keyword">return</span> leftH&gt;rightH ? leftH+<span class="hljs-number">1</span> : rightH+<span class="hljs-number">1</span>;
-    }
+      isAccessed[y][x] = <span class="hljs-number">1</span>;
+      res++;
+      dfs(isAccessed, k, x+<span class="hljs-number">1</span>, y);
+      <span class="hljs-comment">// dfs(isAccessed, k, x-1, y);</span>
+      dfs(isAccessed, k, x, y+<span class="hljs-number">1</span>);
+      <span class="hljs-comment">// dfs(isAccessed, k, x, y-1);</span>
 
+    }
 }
 </code></pre>
+<h4 id="&#x89E3;&#x6CD5;&#x4E00;&#x4F18;&#x5316;-&#x6570;&#x4F4D;&#x548C;&#x7684;&#x8BA1;&#x7B97;">&#x89E3;&#x6CD5;&#x4E00;&#x4F18;&#x5316; &#x6570;&#x4F4D;&#x548C;&#x7684;&#x8BA1;&#x7B97;</h4>
+<p>&#x7531;&#x4E8E;&#x6BCF;&#x6B21; x, y &#x7684;&#x53D8;&#x5316;&#x90FD;&#x662F;&#x52A0;&#x4E00;, &#x6BCF;&#x6B21;&#x53EA;&#x9700;&#x8BA1;&#x7B97; x<em>x</em> &#x5230; x \pm 1<em>x</em>&#xB1;1 &#x7684;<strong>&#x6570;&#x4F4D;&#x548C;&#x589E;&#x91CF;</strong>&#x3002;</p>
+<p>&#x672C;&#x9898;&#x8BF4;&#x660E; 1&#x2264;<em>n</em>,<em>m</em>&#x2264;100 &#xFF0C;&#x516C;&#x5F0F;&#x4EC5;&#x5728;&#x6B64;&#x8303;&#x56F4;&#x9002;&#x7528;&#x3002;</p>
+<blockquote>
+<p> &#x4E0D;&#x592A;&#x559C;&#x6B22;return &#x7684;&#x65F6;&#x5019;&#x5199;&#x4E00;&#x5806;&#x4E1C;&#x897F;, &#x4E0D;&#x559C;&#x6B22;&#x8FD9;&#x79CD;&#x4EE3;&#x7801;&#x98CE;&#x683C;, &#x5C31;&#x7B97; if &#x6267;&#x884C;&#x8BED;&#x53E5;&#x53EA;&#x6709;&#x4E00;&#x884C;&#x6211;&#x90FD;&#x8981;&#x653E;&#x5230; {} &#x91CC;&#x9762;</p>
+</blockquote>
+<pre><code class="lang-java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Solution</span> </span>{
+    <span class="hljs-keyword">int</span> m, n, k;
+    <span class="hljs-keyword">boolean</span>[][] visited;
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">movingCount</span><span class="hljs-params">(<span class="hljs-keyword">int</span> m, <span class="hljs-keyword">int</span> n, <span class="hljs-keyword">int</span> k)</span> </span>{
+        <span class="hljs-keyword">this</span>.m = m; <span class="hljs-keyword">this</span>.n = n; <span class="hljs-keyword">this</span>.k = k;
+        <span class="hljs-keyword">this</span>.visited = <span class="hljs-keyword">new</span> <span class="hljs-keyword">boolean</span>[m][n];
+        <span class="hljs-keyword">return</span> dfs(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>);
+    }
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">dfs</span><span class="hljs-params">(<span class="hljs-keyword">int</span> i, <span class="hljs-keyword">int</span> j, <span class="hljs-keyword">int</span> si, <span class="hljs-keyword">int</span> sj)</span> </span>{
+        <span class="hljs-keyword">if</span>(i &gt;= m || j &gt;= n || k &lt; si + sj || visited[i][j]) <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+        visited[i][j] = <span class="hljs-keyword">true</span>;
+        <span class="hljs-keyword">return</span> <span class="hljs-number">1</span> + dfs(i + <span class="hljs-number">1</span>, j, (i + <span class="hljs-number">1</span>) % <span class="hljs-number">10</span> != <span class="hljs-number">0</span> ? si + <span class="hljs-number">1</span> : si - <span class="hljs-number">8</span>, sj) + dfs(i, j + <span class="hljs-number">1</span>, si, (j + <span class="hljs-number">1</span>) % <span class="hljs-number">10</span> != <span class="hljs-number">0</span> ? sj + <span class="hljs-number">1</span> : sj - <span class="hljs-number">8</span>);
+    }
+}
+</code></pre>
+<h4 id="&#x89E3;&#x6CD5;&#x4E8C;-&#x5E7F;&#x5EA6;&#x4F18;&#x5148;&#x641C;&#x7D22;">&#x89E3;&#x6CD5;&#x4E8C; &#x5E7F;&#x5EA6;&#x4F18;&#x5148;&#x641C;&#x7D22;</h4>
+<p>&#x4F7F;&#x7528;&#x8F85;&#x52A9;&#x961F;&#x5217;, &#x6BCF;&#x6B21;&#x90FD;&#x51FA;&#x5217;</p>
+<p>&#x7136;&#x540E;&#x5C06;&#x5F39;&#x51FA;&#x7684;&#x4F4D;&#x7F6E;&#x7ED3;&#x70B9;&#x7684;&#x7B26;&#x5408;&#x8981;&#x6C42;&#x7684;&#x53F3;&#x65B9;&#x683C;&#x548C;&#x4E0B;&#x65B9;&#x683C;&#x5165;&#x5217;</p>
+<p>res++</p>
+<blockquote>
+<p>&#x548C;&#x4E8C;&#x53C9;&#x6811;&#x7684;&#x5E7F;&#x5EA6;&#x4F18;&#x5148;&#x641C;&#x7D22;&#x5DEE;&#x4E0D;&#x592A;&#x591A;, &#x628A;&#x8BFE;&#x672C;&#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x4E0E;&#x7B97;&#x6CD5;&#x5B9E;&#x73B0;&#x4E00;&#x904D;&#x771F;&#x7684;&#x6709;&#x7528;</p>
+</blockquote>
+<h4 id="&#x89E3;&#x6CD5;&#x4E09;-&#x52A8;&#x6001;&#x89C4;&#x5212;">&#x89E3;&#x6CD5;&#x4E09; &#x52A8;&#x6001;&#x89C4;&#x5212;</h4>
 
                                 
                                 </section>
@@ -754,12 +742,8 @@
 
             
                 
-                <a href="剑指 Offer 55 - I. 二叉树的深度.html" class="navigation navigation-prev " aria-label="Previous page: 剑指 Offer 55 - I. 二叉树的深度">
-                    <i class="fa fa-angle-left"></i>
-                </a>
                 
-                
-                <a href="剑指 Offer 57. 和为s的两个数字.html" class="navigation navigation-next " aria-label="Next page: 剑指 Offer 57. 和为s的两个数字">
+                <a href="⏰ 剑指 Offer 39. 数组中出现次数超过一半的数字.html" class="navigation navigation-next navigation-unique" aria-label="Next page: ⏰ 剑指 Offer 39. 数组中出现次数超过一半的数字">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -770,7 +754,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"剑指 Offer 55 - II. 平衡二叉树","level":"1.3.20","depth":2,"next":{"title":"剑指 Offer 57. 和为s的两个数字","level":"1.3.21","depth":2,"path":"剑指 offer/剑指 Offer 57. 和为s的两个数字.md","ref":"剑指 offer/剑指 Offer 57. 和为s的两个数字.md","articles":[]},"previous":{"title":"剑指 Offer 55 - I. 二叉树的深度","level":"1.3.19","depth":2,"path":"剑指 offer/剑指 Offer 55 - I. 二叉树的深度.md","ref":"剑指 offer/剑指 Offer 55 - I. 二叉树的深度.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"剑指 offer/剑指 Offer 55 - II. 平衡二叉树.md","mtime":"2021-03-19T13:39:09.131Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-04-03T09:32:15.308Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"⏰ 剑指 Offer 13. 机器人的运动范围","level":"1.3.1","depth":2,"next":{"title":"⏰ 剑指 Offer 39. 数组中出现次数超过一半的数字","level":"1.3.2","depth":2,"path":"剑指 offer/⏰ 剑指 Offer 39. 数组中出现次数超过一半的数字.md","ref":"剑指 offer/⏰ 剑指 Offer 39. 数组中出现次数超过一半的数字.md","articles":[]},"previous":{"title":"剑指 offer","level":"1.3","depth":1,"ref":"","articles":[{"title":"⏰ 剑指 Offer 13. 机器人的运动范围","level":"1.3.1","depth":2,"path":"剑指 offer/⏰ 剑指 Offer 13. 机器人的运动范围.md","ref":"剑指 offer/⏰ 剑指 Offer 13. 机器人的运动范围.md","articles":[]},{"title":"⏰ 剑指 Offer 39. 数组中出现次数超过一半的数字","level":"1.3.2","depth":2,"path":"剑指 offer/⏰ 剑指 Offer 39. 数组中出现次数超过一半的数字.md","ref":"剑指 offer/⏰ 剑指 Offer 39. 数组中出现次数超过一半的数字.md","articles":[]},{"title":"⏰ 剑指 Offer 57 - II. 和为s的连续正数序列","level":"1.3.3","depth":2,"path":"剑指 offer/⏰ 剑指 Offer 57 - II. 和为s的连续正数序列.md","ref":"剑指 offer/⏰ 剑指 Offer 57 - II. 和为s的连续正数序列.md","articles":[]},{"title":"⏰ 剑指 Offer 59 - I. 滑动窗口的最大值","level":"1.3.4","depth":2,"path":"剑指 offer/⏰ 剑指 Offer 59 - I. 滑动窗口的最大值.md","ref":"剑指 offer/⏰ 剑指 Offer 59 - I. 滑动窗口的最大值.md","articles":[]},{"title":"⏰剑指 Offer 62. 圆圈中最后剩下的数字","level":"1.3.5","depth":2,"path":"剑指 offer/⏰剑指 Offer 62. 圆圈中最后剩下的数字.md","ref":"剑指 offer/⏰剑指 Offer 62. 圆圈中最后剩下的数字.md","articles":[]},{"title":"剑指 Offer 12. 矩阵中的路径","level":"1.3.6","depth":2,"path":"剑指 offer/剑指 Offer 12. 矩阵中的路径.md","ref":"剑指 offer/剑指 Offer 12. 矩阵中的路径.md","articles":[]},{"title":"剑指 Offer 14- I. 剪绳子","level":"1.3.7","depth":2,"path":"剑指 offer/剑指 Offer 14- I. 剪绳子.md","ref":"剑指 offer/剑指 Offer 14- I. 剪绳子.md","articles":[]},{"title":"剑指 Offer 30. 包含min函数的栈","level":"1.3.8","depth":2,"path":"剑指 offer/剑指 Offer 30. 包含min函数的栈.md","ref":"剑指 offer/剑指 Offer 30. 包含min函数的栈.md","articles":[]},{"title":"剑指 Offer 32 - II. 从上到下打印二叉树 II","level":"1.3.9","depth":2,"path":"剑指 offer/剑指 Offer 32 - II. 从上到下打印二叉树 II.md","ref":"剑指 offer/剑指 Offer 32 - II. 从上到下打印二叉树 II.md","articles":[]},{"title":"剑指 Offer 32 - III. 从上到下打印二叉树 III","level":"1.3.10","depth":2,"path":"剑指 offer/剑指 Offer 32 - III. 从上到下打印二叉树 III.md","ref":"剑指 offer/剑指 Offer 32 - III. 从上到下打印二叉树 III.md","articles":[]},{"title":"剑指 Offer 35. 复杂链表的复制","level":"1.3.11","depth":2,"path":"剑指 offer/剑指 Offer 35. 复杂链表的复制.md","ref":"剑指 offer/剑指 Offer 35. 复杂链表的复制.md","articles":[]},{"title":"剑指 Offer 45. 把数组排成最小的数","level":"1.3.12","depth":2,"path":"剑指 offer/剑指 Offer 45. 把数组排成最小的数.md","ref":"剑指 offer/剑指 Offer 45. 把数组排成最小的数.md","articles":[]},{"title":"剑指 Offer 48. 最长不含重复字符的子字符串","level":"1.3.13","depth":2,"path":"剑指 offer/剑指 Offer 48. 最长不含重复字符的子字符串.md","ref":"剑指 offer/剑指 Offer 48. 最长不含重复字符的子字符串.md","articles":[]},{"title":"剑指 Offer 50. 第一个只出现一次的字符","level":"1.3.14","depth":2,"path":"剑指 offer/剑指 Offer 50. 第一个只出现一次的字符.md","ref":"剑指 offer/剑指 Offer 50. 第一个只出现一次的字符.md","articles":[]},{"title":"剑指 Offer 52. 两个链表的第一个公共节点","level":"1.3.15","depth":2,"path":"剑指 offer/剑指 Offer 52. 两个链表的第一个公共节点.md","ref":"剑指 offer/剑指 Offer 52. 两个链表的第一个公共节点.md","articles":[]},{"title":"剑指 Offer 53 - I. 在排序数组中查找数字 I","level":"1.3.16","depth":2,"path":"剑指 offer/剑指 Offer 53 - I. 在排序数组中查找数字 I.md","ref":"剑指 offer/剑指 Offer 53 - I. 在排序数组中查找数字 I.md","articles":[]},{"title":"剑指 Offer 53 - II. 0～n-1中缺失的数字","level":"1.3.17","depth":2,"path":"剑指 offer/剑指 Offer 53 - II. 0～n-1中缺失的数字.md","ref":"剑指 offer/剑指 Offer 53 - II. 0～n-1中缺失的数字.md","articles":[]},{"title":"剑指 Offer 54. 二叉搜索树的第k大节点","level":"1.3.18","depth":2,"path":"剑指 offer/剑指 Offer 54. 二叉搜索树的第k大节点.md","ref":"剑指 offer/剑指 Offer 54. 二叉搜索树的第k大节点.md","articles":[]},{"title":"剑指 Offer 55 - I. 二叉树的深度","level":"1.3.19","depth":2,"path":"剑指 offer/剑指 Offer 55 - I. 二叉树的深度.md","ref":"剑指 offer/剑指 Offer 55 - I. 二叉树的深度.md","articles":[]},{"title":"剑指 Offer 55 - II. 平衡二叉树","level":"1.3.20","depth":2,"path":"剑指 offer/剑指 Offer 55 - II. 平衡二叉树.md","ref":"剑指 offer/剑指 Offer 55 - II. 平衡二叉树.md","articles":[]},{"title":"剑指 Offer 57. 和为s的两个数字","level":"1.3.21","depth":2,"path":"剑指 offer/剑指 Offer 57. 和为s的两个数字.md","ref":"剑指 offer/剑指 Offer 57. 和为s的两个数字.md","articles":[]},{"title":"剑指 Offer 58 - I. 翻转单词顺序","level":"1.3.22","depth":2,"path":"剑指 offer/剑指 Offer 58 - I. 翻转单词顺序.md","ref":"剑指 offer/剑指 Offer 58 - I. 翻转单词顺序.md","articles":[]},{"title":"剑指 Offer 58 - II. 左旋转字符串","level":"1.3.23","depth":2,"path":"剑指 offer/剑指 Offer 58 - II. 左旋转字符串.md","ref":"剑指 offer/剑指 Offer 58 - II. 左旋转字符串.md","articles":[]},{"title":"剑指 Offer 59 - II. 队列的最大值","level":"1.3.24","depth":2,"path":"剑指 offer/剑指 Offer 59 - II. 队列的最大值.md","ref":"剑指 offer/剑指 Offer 59 - II. 队列的最大值.md","articles":[]},{"title":"剑指 Offer 61. 扑克牌中的顺子","level":"1.3.25","depth":2,"path":"剑指 offer/剑指 Offer 61. 扑克牌中的顺子.md","ref":"剑指 offer/剑指 Offer 61. 扑克牌中的顺子.md","articles":[]},{"title":"剑指 Offer 68 - I. 二叉搜索树的最近公共祖先","level":"1.3.26","depth":2,"path":"剑指 offer/剑指 Offer 68 - I. 二叉搜索树的最近公共祖先.md","ref":"剑指 offer/剑指 Offer 68 - I. 二叉搜索树的最近公共祖先.md","articles":[]},{"title":"剑指 Offer 68 - II. 二叉树的最近公共祖先","level":"1.3.27","depth":2,"path":"剑指 offer/剑指 Offer 68 - II. 二叉树的最近公共祖先.md","ref":"剑指 offer/剑指 Offer 68 - II. 二叉树的最近公共祖先.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"剑指 offer/⏰ 剑指 Offer 13. 机器人的运动范围.md","mtime":"2021-04-03T07:38:54.113Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-04-03T09:32:15.308Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

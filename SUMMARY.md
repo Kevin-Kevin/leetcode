@@ -6,11 +6,13 @@
   * [46. 全排列](leetcode题库/46. 全排列.md)
   * [5. 最长回文子串](leetcode题库/5. 最长回文子串.md)
 - 剑指 offer
+  * [⏰ 剑指 Offer 13. 机器人的运动范围](剑指 offer/⏰ 剑指 Offer 13. 机器人的运动范围.md)
   * [⏰ 剑指 Offer 39. 数组中出现次数超过一半的数字](剑指 offer/⏰ 剑指 Offer 39. 数组中出现次数超过一半的数字.md)
   * [⏰ 剑指 Offer 57 - II. 和为s的连续正数序列](剑指 offer/⏰ 剑指 Offer 57 - II. 和为s的连续正数序列.md)
   * [⏰ 剑指 Offer 59 - I. 滑动窗口的最大值](剑指 offer/⏰ 剑指 Offer 59 - I. 滑动窗口的最大值.md)
   * [⏰剑指 Offer 62. 圆圈中最后剩下的数字](剑指 offer/⏰剑指 Offer 62. 圆圈中最后剩下的数字.md)
   * [剑指 Offer 12. 矩阵中的路径](剑指 offer/剑指 Offer 12. 矩阵中的路径.md)
+  * [剑指 Offer 14- I. 剪绳子](剑指 offer/剑指 Offer 14- I. 剪绳子.md)
   * [剑指 Offer 30. 包含min函数的栈](剑指 offer/剑指 Offer 30. 包含min函数的栈.md)
   * [剑指 Offer 32 - II. 从上到下打印二叉树 II](剑指 offer/剑指 Offer 32 - II. 从上到下打印二叉树 II.md)
   * [剑指 Offer 32 - III. 从上到下打印二叉树 III](剑指 offer/剑指 Offer 32 - III. 从上到下打印二叉树 III.md)
@@ -31,5 +33,6 @@
   * [剑指 Offer 61. 扑克牌中的顺子](剑指 offer/剑指 Offer 61. 扑克牌中的顺子.md)
   * [剑指 Offer 68 - I. 二叉搜索树的最近公共祖先](剑指 offer/剑指 Offer 68 - I. 二叉搜索树的最近公共祖先.md)
   * [剑指 Offer 68 - II. 二叉树的最近公共祖先](剑指 offer/剑指 Offer 68 - II. 二叉树的最近公共祖先.md)
-- [算法思想](算法思想/算法思想.md)
+- 算法设计与分析_笔记
+  * [算法设计](算法设计与分析_笔记/算法设计.md)
 - [解题套路](解题套路/解题套路.md)
