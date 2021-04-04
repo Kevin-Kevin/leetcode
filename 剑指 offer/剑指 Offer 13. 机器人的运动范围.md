@@ -27,6 +27,8 @@
 
 #### 解法一 回溯法深度优先搜索
 
+T=O(m*n)
+
 细读题目会发现只要向右或者向下移动, 所以向上和向下可以忽略
 
 ```java
@@ -110,5 +112,45 @@ res++
 
 #### 解法三 动态规划
 
+T=O(n*m)
 
+```java
+class Solution {
+    public int movingCount(int m, int n, int k) {
+      int[][] dp = new int[n][m];
+      int res = 0;
+      for(int y=0; y<dp.length; y++){
+        for(int x=0; x<dp[0].length; x++){
+          if(getDigitsSum(x)+getDigitsSum(y)>k){
+            continue;
+          }     
+          if(x==0 && y==0){
+            dp[y][x] = 1;
+            res++;
+            continue;
+          }
+          if(y==0){
+            dp[y][x] = dp[y][x-1];
+          }else if(x==0){
+            dp[y][x] = dp[y-1][x];
+          }else{
+            dp[y][x] = dp[y][x-1] | dp[y-1][x];
+          }
+          if(dp[y][x]==1){
+            res++;
+          }
+        }
+      }
+      return res;
+    }
+    public int getDigitsSum(int n){
+      int sum = 0;
+      while(n!=0){
+        sum += n%10;
+        n = n/10; 
+      }
+      return sum;
+    }
+}
+```
 
