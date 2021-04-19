@@ -1,0 +1,975 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>剑指 Offer 34. 二叉树中和为某一值的路径 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="剑指 Offer 35. 复杂链表的复制.html" />
+    
+    
+    <link rel="prev" href="剑指 Offer 32 - III. 从上到下打印二叉树 III.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    leetcode题库
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../leetcode题库/17. 电话号码的字母组合.html">
+            
+                <a href="../leetcode题库/17. 电话号码的字母组合.html">
+            
+                    
+                    17. 电话号码的字母组合
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../leetcode题库/450. 删除二叉搜索树中的节点.html">
+            
+                <a href="../leetcode题库/450. 删除二叉搜索树中的节点.html">
+            
+                    
+                    450. 删除二叉搜索树中的节点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../leetcode题库/46. 全排列.html">
+            
+                <a href="../leetcode题库/46. 全排列.html">
+            
+                    
+                    46. 全排列
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../leetcode题库/5. 最长回文子串.html">
+            
+                <a href="../leetcode题库/5. 最长回文子串.html">
+            
+                    
+                    5. 最长回文子串
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    剑指 offer
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="⏰ 剑指 Offer 16. 数值的整数次方.html">
+            
+                <a href="⏰ 剑指 Offer 16. 数值的整数次方.html">
+            
+                    
+                    ⏰ 剑指 Offer 16. 数值的整数次方
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="⏰ 剑指 Offer 39. 数组中出现次数超过一半的数字.html">
+            
+                <a href="⏰ 剑指 Offer 39. 数组中出现次数超过一半的数字.html">
+            
+                    
+                    ⏰ 剑指 Offer 39. 数组中出现次数超过一半的数字
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="⏰ 剑指 Offer 40. 最小的k个数.html">
+            
+                <a href="⏰ 剑指 Offer 40. 最小的k个数.html">
+            
+                    
+                    ⏰ 剑指 Offer 40. 最小的k个数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="⏰ 剑指 Offer 56 - I. 数组中数字出现的次数.html">
+            
+                <a href="⏰ 剑指 Offer 56 - I. 数组中数字出现的次数.html">
+            
+                    
+                    ⏰ 剑指 Offer 56 - I. 数组中数字出现的次数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="⏰ 剑指 Offer 57 - II. 和为s的连续正数序列.html">
+            
+                <a href="⏰ 剑指 Offer 57 - II. 和为s的连续正数序列.html">
+            
+                    
+                    ⏰ 剑指 Offer 57 - II. 和为s的连续正数序列
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="⏰ 剑指 Offer 59 - I. 滑动窗口的最大值.html">
+            
+                <a href="⏰ 剑指 Offer 59 - I. 滑动窗口的最大值.html">
+            
+                    
+                    ⏰ 剑指 Offer 59 - I. 滑动窗口的最大值
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="⏰ 剑指 Offer 60. n个骰子的点数.html">
+            
+                <a href="⏰ 剑指 Offer 60. n个骰子的点数.html">
+            
+                    
+                    ⏰ 剑指 Offer 60. n个骰子的点数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="⏰ 剑指 Offer 65 不用加减乘除做加法.html">
+            
+                <a href="⏰ 剑指 Offer 65 不用加减乘除做加法.html">
+            
+                    
+                    ⏰ 剑指 Offer 65 不用加减乘除做加法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="⏰剑指 Offer 62. 圆圈中最后剩下的数字.html">
+            
+                <a href="⏰剑指 Offer 62. 圆圈中最后剩下的数字.html">
+            
+                    
+                    ⏰剑指 Offer 62. 圆圈中最后剩下的数字
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="剑指 Offer 12. 矩阵中的路径.html">
+            
+                <a href="剑指 Offer 12. 矩阵中的路径.html">
+            
+                    
+                    剑指 Offer 12. 矩阵中的路径
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.11" data-path="剑指 Offer 13. 机器人的运动范围.html">
+            
+                <a href="剑指 Offer 13. 机器人的运动范围.html">
+            
+                    
+                    剑指 Offer 13. 机器人的运动范围
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.12" data-path="剑指 Offer 14- I. 剪绳子.html">
+            
+                <a href="剑指 Offer 14- I. 剪绳子.html">
+            
+                    
+                    剑指 Offer 14- I. 剪绳子
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.13" data-path="剑指 Offer 14- II. 剪绳子 II.html">
+            
+                <a href="剑指 Offer 14- II. 剪绳子 II.html">
+            
+                    
+                    剑指 Offer 14- II. 剪绳子 II
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.14" data-path="剑指 Offer 30. 包含min函数的栈.html">
+            
+                <a href="剑指 Offer 30. 包含min函数的栈.html">
+            
+                    
+                    剑指 Offer 30. 包含min函数的栈
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.15" data-path="剑指 Offer 32 - II. 从上到下打印二叉树 II.html">
+            
+                <a href="剑指 Offer 32 - II. 从上到下打印二叉树 II.html">
+            
+                    
+                    剑指 Offer 32 - II. 从上到下打印二叉树 II
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.16" data-path="剑指 Offer 32 - III. 从上到下打印二叉树 III.html">
+            
+                <a href="剑指 Offer 32 - III. 从上到下打印二叉树 III.html">
+            
+                    
+                    剑指 Offer 32 - III. 从上到下打印二叉树 III
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.17" data-path="剑指 Offer 34. 二叉树中和为某一值的路径.html">
+            
+                <a href="剑指 Offer 34. 二叉树中和为某一值的路径.html">
+            
+                    
+                    剑指 Offer 34. 二叉树中和为某一值的路径
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.18" data-path="剑指 Offer 35. 复杂链表的复制.html">
+            
+                <a href="剑指 Offer 35. 复杂链表的复制.html">
+            
+                    
+                    剑指 Offer 35. 复杂链表的复制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.19" data-path="剑指 Offer 38. 字符串的排列.html">
+            
+                <a href="剑指 Offer 38. 字符串的排列.html">
+            
+                    
+                    剑指 Offer 38. 字符串的排列
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.20" data-path="剑指 Offer 44. 数字序列中某一位的数字.html">
+            
+                <a href="剑指 Offer 44. 数字序列中某一位的数字.html">
+            
+                    
+                    剑指 Offer 44. 数字序列中某一位的数字
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.21" data-path="剑指 Offer 45. 把数组排成最小的数.html">
+            
+                <a href="剑指 Offer 45. 把数组排成最小的数.html">
+            
+                    
+                    剑指 Offer 45. 把数组排成最小的数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.22" data-path="剑指 Offer 46. 把数字翻译成字符串.html">
+            
+                <a href="剑指 Offer 46. 把数字翻译成字符串.html">
+            
+                    
+                    剑指 Offer 46. 把数字翻译成字符串
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.23" data-path="剑指 Offer 47. 礼物的最大价值.html">
+            
+                <a href="剑指 Offer 47. 礼物的最大价值.html">
+            
+                    
+                    剑指 Offer 47. 礼物的最大价值
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.24" data-path="剑指 Offer 48. 最长不含重复字符的子字符串.html">
+            
+                <a href="剑指 Offer 48. 最长不含重复字符的子字符串.html">
+            
+                    
+                    剑指 Offer 48. 最长不含重复字符的子字符串
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.25" data-path="剑指 Offer 49. 丑数.html">
+            
+                <a href="剑指 Offer 49. 丑数.html">
+            
+                    
+                    剑指 Offer 49. 丑数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.26" data-path="剑指 Offer 50. 第一个只出现一次的字符.html">
+            
+                <a href="剑指 Offer 50. 第一个只出现一次的字符.html">
+            
+                    
+                    剑指 Offer 50. 第一个只出现一次的字符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.27" data-path="剑指 Offer 52. 两个链表的第一个公共节点.html">
+            
+                <a href="剑指 Offer 52. 两个链表的第一个公共节点.html">
+            
+                    
+                    剑指 Offer 52. 两个链表的第一个公共节点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.28" data-path="剑指 Offer 53 - I. 在排序数组中查找数字 I.html">
+            
+                <a href="剑指 Offer 53 - I. 在排序数组中查找数字 I.html">
+            
+                    
+                    剑指 Offer 53 - I. 在排序数组中查找数字 I
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.29" data-path="剑指 Offer 53 - II. 0～n-1中缺失的数字.html">
+            
+                <a href="剑指 Offer 53 - II. 0～n-1中缺失的数字.html">
+            
+                    
+                    剑指 Offer 53 - II. 0～n-1中缺失的数字
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.30" data-path="剑指 Offer 54. 二叉搜索树的第k大节点.html">
+            
+                <a href="剑指 Offer 54. 二叉搜索树的第k大节点.html">
+            
+                    
+                    剑指 Offer 54. 二叉搜索树的第k大节点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.31" data-path="剑指 Offer 55 - I. 二叉树的深度.html">
+            
+                <a href="剑指 Offer 55 - I. 二叉树的深度.html">
+            
+                    
+                    剑指 Offer 55 - I. 二叉树的深度
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.32" data-path="剑指 Offer 55 - II. 平衡二叉树.html">
+            
+                <a href="剑指 Offer 55 - II. 平衡二叉树.html">
+            
+                    
+                    剑指 Offer 55 - II. 平衡二叉树
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.33" data-path="剑指 Offer 56 - I. 数组中数字出现的次数.html">
+            
+                <a href="剑指 Offer 56 - I. 数组中数字出现的次数.html">
+            
+                    
+                    剑指 Offer 56 - I. 数组中数字出现的次数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.34" data-path="剑指 Offer 57. 和为s的两个数字.html">
+            
+                <a href="剑指 Offer 57. 和为s的两个数字.html">
+            
+                    
+                    剑指 Offer 57. 和为s的两个数字
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.35" data-path="剑指 Offer 58 - I. 翻转单词顺序.html">
+            
+                <a href="剑指 Offer 58 - I. 翻转单词顺序.html">
+            
+                    
+                    剑指 Offer 58 - I. 翻转单词顺序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.36" data-path="剑指 Offer 58 - II. 左旋转字符串.html">
+            
+                <a href="剑指 Offer 58 - II. 左旋转字符串.html">
+            
+                    
+                    剑指 Offer 58 - II. 左旋转字符串
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.37" data-path="剑指 Offer 59 - II. 队列的最大值.html">
+            
+                <a href="剑指 Offer 59 - II. 队列的最大值.html">
+            
+                    
+                    剑指 Offer 59 - II. 队列的最大值
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.38" data-path="剑指 Offer 61. 扑克牌中的顺子.html">
+            
+                <a href="剑指 Offer 61. 扑克牌中的顺子.html">
+            
+                    
+                    剑指 Offer 61. 扑克牌中的顺子
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.39" data-path="剑指 Offer 63. 股票的最大利润.html">
+            
+                <a href="剑指 Offer 63. 股票的最大利润.html">
+            
+                    
+                    剑指 Offer 63. 股票的最大利润
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.40" data-path="剑指 Offer 66. 构建乘积数组.html">
+            
+                <a href="剑指 Offer 66. 构建乘积数组.html">
+            
+                    
+                    剑指 Offer 66. 构建乘积数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.41" data-path="剑指 Offer 68 - I. 二叉搜索树的最近公共祖先.html">
+            
+                <a href="剑指 Offer 68 - I. 二叉搜索树的最近公共祖先.html">
+            
+                    
+                    剑指 Offer 68 - I. 二叉搜索树的最近公共祖先
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.42" data-path="剑指 Offer 68 - II. 二叉树的最近公共祖先.html">
+            
+                <a href="剑指 Offer 68 - II. 二叉树的最近公共祖先.html">
+            
+                    
+                    剑指 Offer 68 - II. 二叉树的最近公共祖先
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    算法设计与分析_笔记
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../算法设计与分析_笔记/算法设计.html">
+            
+                <a href="../算法设计与分析_笔记/算法设计.html">
+            
+                    
+                    算法设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../解题套路/解题套路.html">
+            
+                <a href="../解题套路/解题套路.html">
+            
+                    
+                    解题套路
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >剑指 Offer 34. 二叉树中和为某一值的路径</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h4 id="&#x9762;&#x8BD5;&#x9898;34-&#x4E8C;&#x53C9;&#x6811;&#x4E2D;&#x548C;&#x4E3A;&#x67D0;&#x4E00;&#x503C;&#x7684;&#x8DEF;&#x5F84;"><a href="https://leetcode-cn.com/problems/er-cha-shu-zhong-he-wei-mou-yi-zhi-de-lu-jing-lcof/" target="_blank">&#x9762;&#x8BD5;&#x9898;34. &#x4E8C;&#x53C9;&#x6811;&#x4E2D;&#x548C;&#x4E3A;&#x67D0;&#x4E00;&#x503C;&#x7684;&#x8DEF;&#x5F84;</a></h4>
+<p>&#x96BE;&#x5EA6;&#x4E2D;&#x7B49;160</p>
+<p>&#x8F93;&#x5165;&#x4E00;&#x68F5;&#x4E8C;&#x53C9;&#x6811;&#x548C;&#x4E00;&#x4E2A;&#x6574;&#x6570;&#xFF0C;&#x6253;&#x5370;&#x51FA;&#x4E8C;&#x53C9;&#x6811;&#x4E2D;&#x8282;&#x70B9;&#x503C;&#x7684;&#x548C;&#x4E3A;&#x8F93;&#x5165;&#x6574;&#x6570;&#x7684;&#x6240;&#x6709;&#x8DEF;&#x5F84;&#x3002;&#x4ECE;&#x6811;&#x7684;&#x6839;&#x8282;&#x70B9;&#x5F00;&#x59CB;&#x5F80;&#x4E0B;&#x4E00;&#x76F4;&#x5230;&#x53F6;&#x8282;&#x70B9;&#x6240;&#x7ECF;&#x8FC7;&#x7684;&#x8282;&#x70B9;&#x5F62;&#x6210;&#x4E00;&#x6761;&#x8DEF;&#x5F84;&#x3002;</p>
+<p><strong>&#x793A;&#x4F8B;:</strong>
+&#x7ED9;&#x5B9A;&#x5982;&#x4E0B;&#x4E8C;&#x53C9;&#x6811;&#xFF0C;&#x4EE5;&#x53CA;&#x76EE;&#x6807;&#x548C; <code>target = 22</code>&#xFF0C;</p>
+<pre><code>              5
+             / \
+            4   8
+           /   / \
+          11  13  4
+         /  \    / \
+        7    2  5   1
+</code></pre><p>&#x8FD4;&#x56DE;:</p>
+<pre><code>[
+   [5,4,11,2],
+   [5,8,4,5]
+]
+</code></pre><p><strong>&#x63D0;&#x793A;&#xFF1A;</strong></p>
+<ol>
+<li><code>&#x8282;&#x70B9;&#x603B;&#x6570; &lt;= 10000</code></li>
+</ol>
+<h4 id="&#x89E3;&#x6CD5;&#x4E00;-&#x56DE;&#x6EAF;&#x6CD5;&#x6DF1;&#x5EA6;&#x4F18;&#x5148;&#x641C;&#x7D22;">&#x89E3;&#x6CD5;&#x4E00; &#x56DE;&#x6EAF;&#x6CD5;&#x6DF1;&#x5EA6;&#x4F18;&#x5148;&#x641C;&#x7D22;</h4>
+<p>&#x4E00;&#x4E2A;&#x6DF1;&#x5EA6;&#x4F18;&#x5148;&#x641C;&#x7D22;&#x52A0;&#x4E00;&#x4E2A; path &#x8BB0;&#x5F55;&#x8DEF;&#x5F84;</p>
+<p>&#x6F0F;&#x770B;&#x4E86;&#x53F6;&#x7ED3;&#x70B9;, &#x5BA1;&#x9898;&#x8FD8;&#x662F;&#x4E0D;&#x591F;&#x8BA4;&#x771F;, &#x4E00;&#x5B9A;&#x8981;&#x662F;&#x5230;&#x53F6;&#x7ED3;&#x70B9;&#x7684;&#x8DEF;&#x5F84;&#x624D;&#x80FD;&#x7B97;</p>
+<pre><code class="lang-java"><span class="hljs-comment">/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode() {}
+ *     TreeNode(int val) { this.val = val; }
+ *     TreeNode(int val, TreeNode left, TreeNode right) {
+ *         this.val = val;
+ *         this.left = left;
+ *         this.right = right;
+ *     }
+ * }
+ */</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Solution</span> </span>{
+    List&lt;List&lt;Integer&gt;&gt; list;
+    List&lt;Integer&gt; path;
+    <span class="hljs-keyword">public</span> List&lt;List&lt;Integer&gt;&gt; pathSum(TreeNode root, <span class="hljs-keyword">int</span> target) {
+      list = <span class="hljs-keyword">new</span> ArrayList&lt;&gt;();
+      path = <span class="hljs-keyword">new</span> ArrayList&lt;&gt;();
+      dfs(root, target, <span class="hljs-number">0</span>);
+      <span class="hljs-keyword">return</span> list;
+    }
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">dfs</span><span class="hljs-params">(TreeNode root, <span class="hljs-keyword">int</span> target, <span class="hljs-keyword">int</span> currentSum)</span></span>{
+      <span class="hljs-keyword">if</span>(root==<span class="hljs-keyword">null</span>){
+        <span class="hljs-keyword">return</span>;
+      }
+      path.add(root.val);
+      currentSum += root.val;
+      <span class="hljs-keyword">if</span>(currentSum == target &amp;&amp; root.left==<span class="hljs-keyword">null</span> &amp;&amp; root.right==<span class="hljs-keyword">null</span>){
+        list.add(<span class="hljs-keyword">new</span> ArrayList&lt;&gt;(path));
+        path.remove(path.size()-<span class="hljs-number">1</span>);
+        <span class="hljs-keyword">return</span>;
+      }
+      dfs(root.left, target, currentSum);
+      dfs(root.right, target, currentSum);
+      path.remove(path.size()-<span class="hljs-number">1</span>);
+    }
+}
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="剑指 Offer 32 - III. 从上到下打印二叉树 III.html" class="navigation navigation-prev " aria-label="Previous page: 剑指 Offer 32 - III. 从上到下打印二叉树 III">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="剑指 Offer 35. 复杂链表的复制.html" class="navigation navigation-next " aria-label="Next page: 剑指 Offer 35. 复杂链表的复制">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"剑指 Offer 34. 二叉树中和为某一值的路径","level":"1.3.17","depth":2,"next":{"title":"剑指 Offer 35. 复杂链表的复制","level":"1.3.18","depth":2,"path":"剑指 offer/剑指 Offer 35. 复杂链表的复制.md","ref":"剑指 offer/剑指 Offer 35. 复杂链表的复制.md","articles":[]},"previous":{"title":"剑指 Offer 32 - III. 从上到下打印二叉树 III","level":"1.3.16","depth":2,"path":"剑指 offer/剑指 Offer 32 - III. 从上到下打印二叉树 III.md","ref":"剑指 offer/剑指 Offer 32 - III. 从上到下打印二叉树 III.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"剑指 offer/剑指 Offer 34. 二叉树中和为某一值的路径.md","mtime":"2021-04-07T06:26:17.049Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-04-19T04:06:55.442Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
