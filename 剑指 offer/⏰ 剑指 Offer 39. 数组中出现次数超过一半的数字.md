@@ -25,5 +25,32 @@
 > 1 <= 数组长度 <= 50000
 > ```
 
-### 解法一 
+#### 解法一 哈希表
+
+#### 解法二 排序
+
+#### 解法三 抵消法
+
+由于要求的数字超过数组的一半, 取数组中的数两两比较不同就抵消掉, 最后总会剩下要求的数字
+
+```java
+class Solution {
+    public int majorityElement(int[] nums) {
+      int mode = 0;
+      int times = 0;
+      for(int n : nums){
+        if(times == 0){
+          mode = n;
+        }
+        if(mode!=n){
+          times -= 1;
+        }else{
+          times += 1;
+        }
+      }
+      return mode;
+      
+    }
+}
+```
 
