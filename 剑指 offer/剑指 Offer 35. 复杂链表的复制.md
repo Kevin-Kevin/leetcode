@@ -8,7 +8,7 @@
 >
 > **示例 1：**
 >
-> ![img](https://gitee.com/kevinzhang1999/my-picture/raw/master/uPic/e1-1615864197054.png)
+> ![img](https://raw.githubusercontent.com/Kevin-Kevin/pictureBed/master/uPic/e1-1615864197054.png)
 >
 > ```
 > 输入：head = [[7,null],[13,0],[11,4],[10,2],[1,0]]
@@ -17,7 +17,7 @@
 >
 > **示例 2：**
 >
-> ![img](https://gitee.com/kevinzhang1999/my-picture/raw/master/uPic/e2-1615864197129.png)
+> ![img](https://raw.githubusercontent.com/Kevin-Kevin/pictureBed/master/uPic/e2-1615864197129.png)
 >
 > ```
 > 输入：head = [[1,1],[2,1]]
@@ -26,7 +26,7 @@
 >
 > **示例 3：**
 >
-> **![img](https://gitee.com/kevinzhang1999/my-picture/raw/master/uPic/e3-1615864197180.png)**
+> **![img](https://raw.githubusercontent.com/Kevin-Kevin/pictureBed/master/uPic/e3-1615864197180.png)**
 >
 > ```
 > 输入：head = [[3,null],[3,0],[3,null]]

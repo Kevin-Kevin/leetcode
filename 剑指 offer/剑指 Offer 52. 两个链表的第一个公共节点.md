@@ -6,7 +6,7 @@
 
 如下面的两个链表**：**
 
-[![img](https://gitee.com/kevinzhang1999/my-picture/raw/master/uPic/160_statement-1616157590781.png)](https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2018/12/14/160_statement.png)
+[![img](https://raw.githubusercontent.com/Kevin-Kevin/pictureBed/master/uPic/160_statement-1616157590781.png)](https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2018/12/14/160_statement.png)
 
 在节点 c1 开始相交。
 
@@ -14,7 +14,7 @@
 
 **示例 1：**
 
-[![img](https://gitee.com/kevinzhang1999/my-picture/raw/master/uPic/160_example_1-1616157590782.png)](https://assets.leetcode.com/uploads/2018/12/13/160_example_1.png)
+[![img](https://raw.githubusercontent.com/Kevin-Kevin/pictureBed/master/uPic/160_example_1-1616157590782.png)](https://assets.leetcode.com/uploads/2018/12/13/160_example_1.png)
 
 ```
 输入：intersectVal = 8, listA = [4,1,8,4,5], listB = [5,0,1,8,4,5], skipA = 2, skipB = 3
@@ -26,7 +26,7 @@
 
 **示例 2：**
 
-[![img](https://gitee.com/kevinzhang1999/my-picture/raw/master/uPic/160_example_2-1616157590780.png)](https://assets.leetcode.com/uploads/2018/12/13/160_example_2.png)
+[![img](https://raw.githubusercontent.com/Kevin-Kevin/pictureBed/master/uPic/160_example_2-1616157590780.png)](https://assets.leetcode.com/uploads/2018/12/13/160_example_2.png)
 
 ```
 输入：intersectVal = 2, listA = [0,9,1,2,4], listB = [3,2,4], skipA = 3, skipB = 1
@@ -38,7 +38,7 @@
 
 **示例 3：**
 
-[![img](https://gitee.com/kevinzhang1999/my-picture/raw/master/uPic/160_example_3-1616157590836.png)](https://assets.leetcode.com/uploads/2018/12/13/160_example_3.png)
+[![img](https://raw.githubusercontent.com/Kevin-Kevin/pictureBed/master/uPic/160_example_3-1616157590836.png)](https://assets.leetcode.com/uploads/2018/12/13/160_example_3.png)
 
 ```
 输入：intersectVal = 0, listA = [2,6,4], listB = [1,5], skipA = 3, skipB = 2

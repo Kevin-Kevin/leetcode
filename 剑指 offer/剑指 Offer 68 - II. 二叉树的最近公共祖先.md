@@ -8,7 +8,7 @@
 
 例如，给定如下二叉树: root = [3,5,1,6,2,0,8,null,null,7,4]
 
-![img](https://gitee.com/kevinzhang1999/my-picture/raw/master/uPic/binarytree-1616146813571.png)
+![img](https://raw.githubusercontent.com/Kevin-Kevin/pictureBed/master/uPic/binarytree-1616146813571.png)
 
  
 
